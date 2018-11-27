@@ -56,24 +56,26 @@
     </nav>
   </header>
   <main class="container">
-    <h1 hidden="hidden">Магазин мороженого "Глейси"</h1>
+    <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
     <!--Слайдер-->
     <section>
-      <h2 hidden>Галлерея мороженого</h2>
-      <div class="controls">
-        <!--Здет будут кнопки переключения слайдов-->
-      </div>
-      <div class="inner-slider">
-        <div class="slider-slides">
-          <img src="img/icecream-cones-1.png" alt="Рожки малинового и ванильно-шоколадного мороженого" width="1045" height="881">
-          <img src="img/icecream-cones-2.png" alt="Рожки шоколадного и ванильно-клубничного с кусочками мороженого" width="1045" height="881">
-          <img src="img/icecream-cones-3.png" alt="Рожки малинового и ванильного с шоколадным топингом мороженого" width="1045" height="881">
+      <h2 class="visually-hidden">Галлерея мороженого</h2>
+      <div class="slider">
+        <div class="controls">
+          <!--Здет будут кнопки переключения слайдов-->
         </div>
+        <div class="inner-slider">
+          <div class="slider-slides">
+            <img src="img/icecream-cones-1.png" alt="Рожки малинового и ванильно-шоколадного мороженого" width="1045" height="881">
+            <img src="img/icecream-cones-2.png" alt="Рожки шоколадного и ванильно-клубничного с кусочками мороженого" width="1045" height="881">
+            <img src="img/icecream-cones-3.png" alt="Рожки малинового и ванильного с шоколадным топингом мороженого" width="1045" height="881">
+          </div>
+        </div>
+        <a href="catalog.html" class="buttons">Давайте оба!</a>
       </div>
-      <a href="catalog.html" class="buttons">Давайте оба!</a>
     </section>
     <section class="promo-ad">
-      <h2 hidden="hidden">Промо-акции</h2>
+      <h2 class="visually-hidden">Промо-акции</h2>
       <ul>
         <li>
           <div class="promo-raspberry">
@@ -93,7 +95,7 @@
     </section>
     <!-- Раздел Хиты продаж-->
     <section class="hits-items">
-      <h2 hidden="hidden">Популярные товары</h2>
+      <h2 class="visually-hidden">Популярные товары</h2>
       <ul>
         <li>
           <img src="img/hit.svg" alt="Хит!" width="61" height="61">
@@ -154,7 +156,7 @@
     </section>
     <!-- Раздел "О магазине" и его достоинства-->
     <section class="advantages">
-      <h2 hidden="hidden">О магазине</h2>
+      <h2 class="visually-hidden">О магазине</h2>
       <p class="about-us">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
       <ul class="advantages-items">
         <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -172,12 +174,16 @@
     </article>
     <!--Форма рассылки-->
     <section class="mailing">
-      <h2 hidden="hidden">Новостная рассылка</h2>
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <!--Здесь будет форма подписки на рассылку-->
+      <h2 class="visually-hidden">Новостная рассылка</h2>
+      <!--Форма подписки на рассылку-->
+      <form class="mailing-form" action="index.html" method="post">
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <input type="email" name="custom-email" value="" placeholder="Электронная почта">
+        <button type="submit" name="subscribtion" class="buttons">Отправить</button>
+      </form>
     </section>
     <section class="contacts">
-      <h2 hidden="hidden">Контакты</h2>
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="main-map">
         <img src="img/map.jpg" alt="Карта, адрес магазина ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
       </div>
@@ -191,7 +197,7 @@
   <footer class="main-footer">
     <!-- Ссылки на соц. сети-->
     <div class="social-links">
-      <h3 hidden="hidden">Ссылки на социальные сети</h3>
+      <h3 class="visually-hidden">Ссылки на социальные сети</h3>
       <ul>
         <li class="social-button-twitter">
           <a href="#">Twitter</a>
@@ -236,33 +242,38 @@
   </footer>
   <!-- Всплывающее окно входа-->
   <div class="sing-in-form">
-    <h3 hidden="hidden">Вход в личный кабинет</h3>
-    <p>Электронная почта</p>
-    <p>Пароль</p>
+    <h3 class="visually-hidden">Вход в личный кабинет</h3>
+    <form class="" action="index.html" method="post">
+      <input type="email" name="login-email" value="" placeholder="Электронная почта">
+      <input type="password" name="password" value="" placeholder="Пароль">
+    </form>
     <a href="#" class="buttons">Войти</a>
     <ul>
       <li>
         <a href="#">Забыли пароль?</a>
       </li>
       <li>
-        <a href="#">Регитсрация</a>
+        <a href="#">Регистрация</a>
       </li>
     </ul>
   </div>
   <!-- Форма поиска-->
   <div class="search-form">
-    <p>Что ищем?</p>
+    <form class="search-form" action="index.html" method="post">
+      <input type="search" name="search" value="" placeholder="Что ищем?">
+      <button type="submit" name="search" class="visually-hidden">Поиск</button>
+    </form>
   </div>
   <!-- Форма обратной связи-->
   <div class="feedback">
-    <p>
-      <b>Мы обязательно вам ответим!</b>
-    </p>
-    <p>Как вас зовут?</p>
-    <p>Ваша почта для ответа?</p>
-    <p>Напишите что-нибудь...</p>
-    <button type="button" name="button" class="buttons">Отправить</button>
-    <span>X</span>
+    <form class="" action="index.html" method="post">
+      <p><b>Мы обязательно вам ответим!</b></p>
+      <input type="text" name="custom-name" value="" placeholder="Как вас зовут?">
+      <input type="email" name="custom-email" value="" placeholder="Ваша почта для ответа?">
+      <textarea name="comments" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+      <button type="submit" name="feedback-send" class="buttons">Отправить</button>
+      <button type="button" name="close-button" class="close-button">Закрыть</button>
+    </form>
   </div>
 </body>
 
