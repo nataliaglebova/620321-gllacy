@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Магазин мороженого "Глейси"</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
           <ul class="sub-menu">
             <!-- Выпадающее меню-->
             <li>
-              <a href="#">Новинки</a>
+              <a href="#" class="new-items">Новинки</a>
             </li>
             <li>
               <a href="#">Сливочное</a>
@@ -46,10 +48,10 @@
       <p class="log-in">
         <a href="#">Вход</a>
       </p>
-      <p class="cart">
+      <p class="empty-cart">
         <a href="#">Корзина</a>
       </p>
-      <p class="contact-info">С 10 до 20, ежедневно
+      <p class="schedule">С 10 до 20, ежедневно
         <span class="header-tel">8 812 450-25-25</span></p>
     </nav>
   </header>
@@ -64,10 +66,13 @@
       <div class="inner-slider">
         <div class="slider-slides">
           <img src="img/icecream-cones-1.png" alt="Рожки малинового и ванильно-шоколадного мороженого" width="1045" height="881">
+          <p class="slides-text">Крем-брюле и пломбир с малиновым джемом</p>
           <img src="img/icecream-cones-2.png" alt="Рожки шоколадного и ванильно-клубничного с кусочками мороженого" width="1045" height="881">
+          <p class="slides-text">Шоколадный пломбир и лимонный сорбет </p>
           <img src="img/icecream-cones-3.png" alt="Рожки малинового и ванильного с шоколадным топингом мороженого" width="1045" height="881">
+          <p class="slides-text">Пломбир с помадкой и клубничный щербет</p>
         </div>
-        <a href="catalog.html" class="buttons">Давайте оба!</a>
+          <a href="catalog.html" class="buttons slider-link">Давайте оба!</a>
       </div>
     </section>
     <section class="promo-ad">
@@ -98,12 +103,12 @@
           <div class="hits-icecream">
             <figure>
               <img src="img/orange-icecream.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p class="icecream-price">310 &#8381;
-                <span class="kilos">/кг</span></p>
+              <p class="icecream-price">310 &#8381;<span class="kilos">/кг</span></p>
               <figcaption>
                 <a href="catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </figcaption>
             </figure>
+            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
           </div>
         </li>
         <!--Блок шоколадно-кофейного мороженого-->
@@ -111,13 +116,13 @@
           <div class="hits-icecream">
             <img src="img/hit.svg" alt="Хит!" width="61" height="61">
             <figure>
-              <img src="img/coffee-icecream.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              <p class="icecream-price">380 &#8381;
-                <span class="kilos">/кг</span></p>
+              <img src="img/coffee-icecream.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада" >
+              <p class="icecream-price">380 &#8381;<span class="kilos">/кг</span></p>
               <figcaption>
                 <a href="catalog.html">Сливочно-кофейное с кусочками шоколада</a>
               </figcaption>
             </figure>
+            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
           </div>
         </li>
         <!--Блок клубничного мороженого-->
@@ -126,12 +131,12 @@
             <img src="img/hit.svg" alt="Хит!" width="61" height="61">
             <figure>
               <img src="img/strawberry-icecream.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p class="icecream-price">355 &#8381;
-                <span class="kilos">/кг</span></p>
+              <p class="icecream-price">355 &#8381;<span class="kilos">/кг</span></p>
               <figcaption>
                 <a href="catalog.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
               </figcaption>
             </figure>
+            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
           </div>
         </li>
         <!--Блок карамельного крем-брюле-->
@@ -140,12 +145,12 @@
             <img src="img/hit.svg" alt="Хит!" width="61" height="61">
             <figure>
               <img src="img/caramel-icecream.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              <p class="icecream-price">415 &#8381;
-                <span class="kilos">/кг</span></p>
+              <p class="icecream-price">415 &#8381;<span class="kilos">/кг</span></p>
               <figcaption>
                 <a href="catalog.html">Сливочное крем-брюле с карамельной подливкой</a>
               </figcaption>
             </figure>
+            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
           </div>
         </li>
       </ul>
@@ -183,11 +188,13 @@
       <div class="main-map">
         <img src="img/map.jpg" alt="Карта, адрес магазина ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
       </div>
-      <p>Адрес главного офиса и офлайн-магазина:</p>
-      <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-      <p>Для заказов по телефону:<br>
+      <div class="adress-tel-info">
+        <p>Адрес главного офиса и офлайн-магазина:</p>
+        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+        <p>Для заказов по телефону:<br>
         <b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
-      <a href="#" class="buttons">Форма обратной связи</a>
+        <a href="#" class="buttons">Форма обратной связи</a>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -230,10 +237,12 @@
     </div>
     <!-- О правообладателях-->
     <div class="copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" alt="HTMLACADEMY" width="108" height="39"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy-small.svg" alt="HTMLACADEMY" width="108" height="39">
+      </a>
       <p>Сделано в
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        &copy; 2017</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-link">HTML Academy</a> &copy; 2017
+      </p>
     </div>
   </footer>
   <!-- Всплывающее окно входа-->

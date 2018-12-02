@@ -1,0 +1,694 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(125, 157, 146);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul.site-menu,
+ul.sub-menu {
+  list-style-type: none;
+}
+
+ul.site-menu li a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  line-height: 18px;
+  border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+}
+
+.site-menu ul.sub-menu li:hover,
+site-menu ul.sub-menu li:focus {
+  background-color: #fbded7;
+}
+
+.site-menu ul.sub-menu li:active {
+  background-color: #f6b5a5;
+}
+
+ul.sub-menu li {
+  background-color: #f8f7f4;
+  width: 143px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+ul.sub-menu li a {
+  color: #323232;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+ul.sub-menu a.new-items {
+  font-weight: bold;
+}
+
+ul.sub-menu li:first-child {
+  border-bottom: 1px solid #ebeae7;
+}
+
+p.empty-cart a,
+p.log-in a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+p.log-in {
+  width: 93px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+}
+
+nav.site-navigation p.log-in a:active {
+  color: rgba(50, 50, 50, 1);
+}
+
+nav.site-navigation p.log-in:active,
+nav.site-navigation p.log-in:focus {
+  background-color: rgba(248, 247, 244, 1);
+  width: 93px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+p.empty-cart {
+  width: 93px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+}
+
+nav.site-navigation p.empty-cart a:active {
+  color: rgba(50, 50, 50, 1);
+}
+
+nav.site-navigation p.empty-cart:active,
+nav.site-navigation p.empty-cart:focus {
+  background-color: rgba(248, 247, 244, 1);
+  width: 93px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+.site-navigation p.schedule {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.site-navigation p.schedule span {
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  font-size: 22px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.slider-slides {
+  text-align: center;
+}
+
+.slider-slides p.slides-text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 60px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  line-height: 61px;
+}
+
+div.inner-slider a.slider-link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 32px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  width: 280px;
+  height: auto;
+  border-radius: 40px;
+  text-align: center;
+  padding: 18px 42px 18px 42px;
+}
+
+.promo-ad ul {
+  list-style-type: none;
+}
+
+section.promo-ad div.promo-raspberry,
+section.promo-ad div.promo-chocolate {
+  width: 514px;
+  height: 229px;
+  box-sizing: content-box;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 22px;
+  border-radius: 15px;
+  padding-left: 21px;
+  background-repeat: no-repeat;
+}
+
+section.promo-ad div.promo-raspberry h3,
+section.promo-ad div.promo-chocolate h3 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 35px;
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 41px;
+  padding-left: 21px;
+  padding-top: 22px;
+}
+
+section.promo-ad div.promo-raspberry {
+  background-image: url("../img/promo-raspberry-background.jpg");
+}
+
+section.promo-ad div.promo-chocolate {
+  background-image: url("../img/promo-chocolate-background.jpg");
+}
+
+section.promo-ad a.buttons {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border-radius: 40px;
+  text-align: center;
+  padding: 16px 25px 17px 24px;
+}
+
+section.hits-items ul,
+section.icecream-catalog ul.icecream-item-list {
+  list-style-type: none;
+}
+
+section.hits-items ul a,
+section.icecream-catalog ul.icecream-item-list a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+}
+
+div.hits-icecream figure img,
+div.icecream-item figure img,
+section.order table.shopping-list tr td img.small-item-img {
+  border-radius: 100%;
+}
+
+div.hits-icecream figure p.icecream-price,
+div.icecream-item figure p.icecream-price {
+  color: rgba(255, 255, 255, 1);
+  font-size: 45px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+div.hits-icecream figure p.icecream-price span,
+div.icecream-item figure p.icecream-price span {
+  font-size: 30px;
+}
+
+section.advantages {
+  background-image: url("../img/waffle-background.jpg");
+  width: 1146px;
+  border-radius: 15px;
+}
+
+section.advantages p.about-us {
+  color: rgba(50, 50, 50, 1);
+  font-size: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 30px;
+  background-repeat: no-repeat;
+}
+
+section.advantages ul.advantages-items li {
+  color: rgba(50, 50, 50, 1);
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  list-style-type: none;
+}
+
+article.blog {
+  background-image: url("../img/srawberry-background.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 221px;
+  border-radius: 15px;
+}
+
+article.blog h2 {
+  color: rgba(50, 50, 50, 1);
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+article.blog a h3 {
+  color: rgba(50, 50, 50, 1);
+  font-size: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+section.mailing form.mailing-form {
+  background-image: url("../img/mailing-background.png");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
+}
+
+section.mailing form.mailing-form button {
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px 25px 10px 24px;
+}
+
+section.mailing form.mailing-form input[type="email"] {
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  width: 369px;
+  height: 42px;
+}
+
+section.contacts div.adress-tel-info {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  width: 302px;
+  height: 305px;
+}
+
+section.contacts div.adress-tel-info p:not(b) {
+  color: rgba(51, 51, 51, 1);
+  font-size: 14px;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+section.contacts div.adress-tel-info b {
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 24px;
+}
+
+section.contacts div.adress-tel-info a.buttons {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  padding: 10px 25px 10px 24px;
+}
+
+section.contacts div.adress-tel-info a.buttons:hover,
+div.sing-in-form form button:hover,
+div.feedback form button:hover,
+section.mailing form.mailing-form button:hover,
+section.promo-ad a.buttons:hover,
+div.inner-slider a.slider-link:hover,
+section.icecream-catalog ul.icecream-item-list div.icecream-item button:hover,
+section.hits-items li div.hits-icecream button.buttons:hover {
+  background-image: linear-gradient(to bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)),
+    linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
+}
+
+section.contacts div.adress-tel-info a.buttons:focus,
+div.sing-in-form form button:focus,
+div.feedback form button:focus,
+section.mailing form.mailing-form button:focus,
+section.promo-ad a.buttons:focus,
+div.inner-slider a.slider-link:focus,
+section.icecream-catalog ul.icecream-item-list div.icecream-item button:focus,
+section.hits-items li div.hits-icecream button.buttons:focus {
+  background-image: linear-gradient(to bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)),
+    linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
+}
+
+section.contacts div.adress-tel-info a.buttons:active,
+div.sing-in-form form button:active,
+div.feedback form button:active,
+section.mailing form.mailing-form button:active,
+section.promo-ad a.buttons:active,
+div.inner-slider a.slider-link:active,
+section.icecream-catalog ul.icecream-item-list div.icecream-item button:active,
+section.hits-items li div.hits-icecream button.buttons:active {
+  box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
+  background-image: linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67)), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+}
+
+footer.main-footer ul {
+  list-style-type: none;
+}
+
+footer.main-footer ul a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+}
+
+footer.main-footer div.copyright p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+footer.main-footer div.copyright p>a {
+  font: inherit;
+  color: inherit;
+  border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+}
+
+div.sing-in-form {
+  background-color: rgba(248, 247, 244, 1);
+  width: 276px;
+  height: 215px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+div.sing-in-form form input {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  width: 241px;
+  height: 45px;
+}
+
+div.sing-in-form form button {
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  padding: 10px 25px 10px 24px;
+}
+
+div.sing-in-form ul.login-links {
+  list-style-type: none;
+}
+
+div.sing-in-form ul.login-links a {
+  color: rgba(50, 50, 50, 1);
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  border-bottom: solid rgba(50, 50, 50, 1) 1px;
+}
+
+div.search-form {
+  background-color: rgba(248, 247, 244, 1);
+  width: 344px;
+  height: 84px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+div.search-form form.search-form input {
+  font-size: 14px;
+  font-family: "Roboto", "Arial", sans-serif;
+  width: 310px;
+  height: 44px;
+  margin-top: 14px;
+  margin-left: 14px;
+}
+
+div.feedback form {
+  background-color: rgba(248, 247, 244, 1);
+  font-family: "Roboto", "Arial", sans-serif;
+  width: 478px;
+  height: 442px;
+}
+
+div.feedback form p {
+  color: rgba(50, 50, 50, 1);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 24px;
+}
+
+div.feedback form button {
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  padding: 10px 25px 10px 24px;
+}
+
+nav.site-navigation p.full-cart a {
+  color: rgba(50, 50, 50, 1);
+}
+
+nav.site-navigation p.full-cart {
+  background-color: rgba(248, 247, 244, 1);
+  width: 93px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+main div.breadcrumb ul {
+  list-style: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+main div.breadcrumb ul li a {
+  font: inherit;
+  color: inherit;
+  border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+}
+
+main.container h1 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 35px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+main section.filter fieldset {
+  border: none;
+}
+
+main section.filter form.catalog-filter .filter-type {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+}
+
+main section.filter form.catalog-filter li {
+  list-style-type: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+}
+
+section.filter select.sorting,
+section.filter input[type="range"],
+section.filter fieldset.fat-content ul,
+section.filter fieldset.flavors-type ul {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+}
+
+section.filter select.sorting:hover,
+section.filter li input[type="range"]:hover,
+section.filter fieldset.fat-content ul li:hover,
+section.filter fieldset.flavors-type ul li:hover {
+  color: rgba(50, 50, 50, 1);
+}
+
+section.filter form.catalog-filter button {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding: 10px 30px 10px 30px;
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+section.filter form.catalog-filter button:hover,
+section.filter form.catalog-filter button:active {
+  color: rgb(50, 50, 50);
+  background-color: rgb(255, 255, 255);
+}
+
+section.filter form.catalog-filter button:active {
+  color: rgb(50, 50, 50);
+  box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+  background-color: rgb(237, 237, 237);
+}
+
+section.icecream-catalog ul.icecream-item-list div.icecream-item button,
+section.hits-items li div.hits-icecream button.buttons {
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  padding: 15px 17px 15px 17px;
+}
+
+main div.paginator li {
+  list-style-type: none;
+}
+
+main div.paginator li a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+main div.paginator li a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+}
+
+main div.paginator li.current-page-number {
+  color: rgba(50, 50, 50, 1);
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+}
+
+section.order {
+  color: rgba(50, 50, 50, 1);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 13px;
+  background-color: rgba(248, 247, 245, 1);
+  border-radius: 5px;
+  width: 543px;
+  height: 243px;
+}
+
+section.order tr td a {
+  color: inherit;
+}
+
+section.order tr.total td {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  border-top: 1px solid #cacac7;
+}
+
+section.order table.shopping-list span.price-per-one {
+  color: rgb(188, 188, 186);
+}
+
+section.order a.buttons {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+nav.site-navigation ul.site-menu a.current-page {
+  background-color: rgba(208, 112, 88, 0.8);
+  border-radius: 40px;
+}
+
+nav.site-navigation ul.site-menu ul.sub-menu li.current-menu-item {
+  background-color: rgb(208, 112, 88);
+}
+
+section.hits-items div.hits-icecream:hover,
+section.icecream-catalog div.icecream-item:hover,
+section.hits-items div.hits-icecream:focus,
+section.icecream-catalog div.icecream-item:focus {
+  width: 294px;
+  height: 406px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
+section.hits-items div.hits-icecream a:hover,
+section.icecream-catalog div.icecream-item a:hover,
+div.footer-links a:hover,
+div.copyright a.academy-link:hover,
+ection.hits-items div.hits-icecream a:focus,
+section.icecream-catalog div.icecream-item a:focus,
+div.footer-links a:focus,
+div.copyright a.academy-link:focus,
+section.hits-items div.hits-icecream a:active,
+section.icecream-catalog div.icecream-item a:active,
+div.footer-links a:active,
+div.copyright a.academy-link:active {
+  color: rgb(255, 188, 158);
+  border-bottom: solid rgb(255, 188, 158) 1px;
+}
+
+article.blog a h3:hover,
+article.blog a h3:focus,
+article.blog a h3:active,
+div.sing-in-form ul.login-links li a:hover,
+div.sing-in-form ul.login-links li a:focus,
+div.sing-in-form ul.login-links li a:active {
+  color: rgb(232, 77, 55);
+  border-bottom: solid rgb(232, 77, 55) 1px;
+}
