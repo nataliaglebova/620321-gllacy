@@ -395,6 +395,7 @@ footer.main-footer div.copyright p>a {
 }
 
 div.sing-in-form {
+  display: none;
   background-color: rgba(248, 247, 244, 1);
   width: 276px;
   height: 215px;
@@ -437,6 +438,7 @@ div.sing-in-form ul.login-links a {
 }
 
 div.search-form {
+  display: none;
   background-color: rgba(248, 247, 244, 1);
   width: 344px;
   height: 84px;
@@ -454,6 +456,7 @@ div.search-form form.search-form input {
 }
 
 div.feedback form {
+  display: none;
   background-color: rgba(248, 247, 244, 1);
   font-family: "Roboto", "Arial", sans-serif;
   width: 478px;
@@ -613,6 +616,7 @@ main div.paginator li.current-page-number {
 }
 
 section.order {
+  display: none;
   color: rgba(50, 50, 50, 1);
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 13px;
