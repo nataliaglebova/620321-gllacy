@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   background-color: rgb(125, 157, 146);
 }
 
@@ -7,109 +7,105 @@ a {
   text-decoration: none;
 }
 
-ul.site-menu,
-ul.sub-menu {
+.site-menu,
+.sub-menu {
   list-style-type: none;
 }
 
-ul.site-menu li a {
+.site-menu a {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   line-height: 18px;
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
 }
 
-.site-menu ul.sub-menu li:hover,
-site-menu ul.sub-menu li:focus {
-  background-color: #fbded7;
+.sub-menu li:hover,
+.sub-menu li:focus {
+  background-color: rgb(251, 222, 215);
 }
 
-.site-menu ul.sub-menu li:active {
-  background-color: #f6b5a5;
+.sub-menu li:active {
+  background-color: rgb(246, 181, 165);
 }
 
-ul.sub-menu li {
-  background-color: #f8f7f4;
+.sub-menu li {
+  background-color: rgb(248, 247, 244);
   width: 143px;
   padding-top: 16px;
   padding-left: 16px;
 }
 
-ul.sub-menu li a {
-  color: #323232;
+.sub-menu li a {
+  color: rgb(50, 50, 50);
   font-weight: normal;
   line-height: 16px;
 }
 
-ul.sub-menu a.new-items {
+.sub-menu .new-items {
   font-weight: bold;
 }
 
-ul.sub-menu li:first-child {
-  border-bottom: 1px solid #ebeae7;
+.sub-menu li:first-child {
+  border-bottom: 1px solid rgb(235, 234, 231);
 }
 
-p.empty-cart a,
-p.log-in a {
+.empty-cart a,
+.log-in a {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
 }
 
-p.log-in {
+.log-in {
   width: 93px;
   height: 32px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
 }
 
-nav.site-navigation p.log-in a:active {
+.log-in a:active {
   color: rgba(50, 50, 50, 1);
 }
 
-nav.site-navigation p.log-in:active,
-nav.site-navigation p.log-in:focus {
+.site-navigation .log-in:active,
+.site-navigation .log-in:focus {
   background-color: rgba(248, 247, 244, 1);
   width: 93px;
   height: 32px;
   border-radius: 50px;
 }
 
-p.empty-cart {
+.empty-cart {
   width: 93px;
   height: 32px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
 }
 
-nav.site-navigation p.empty-cart a:active {
+.empty-cart a:active {
   color: rgba(50, 50, 50, 1);
 }
 
-nav.site-navigation p.empty-cart:active,
-nav.site-navigation p.empty-cart:focus {
+.site-navigation .empty-cart:active,
+.site-navigation .empty-cart:focus {
   background-color: rgba(248, 247, 244, 1);
   width: 93px;
   height: 32px;
   border-radius: 50px;
 }
 
-.site-navigation p.schedule {
+.site-navigation .schedule {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   line-height: 16px;
 }
 
-.site-navigation p.schedule span {
+.schedule span {
   color: rgba(255, 255, 255, 1);
   display: block;
   font-size: 22px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   line-height: 30px;
 }
@@ -118,20 +114,19 @@ nav.site-navigation p.empty-cart:focus {
   text-align: center;
 }
 
-.slider-slides p.slides-text {
+.slider-slides .slides-text {
   color: rgba(255, 255, 255, 1);
   font-size: 60px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   line-height: 61px;
 }
 
-div.inner-slider a.slider-link {
+.inner-slider .slider-link {
   color: rgba(255, 255, 255, 1);
   font-size: 32px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  background-image:
+    linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   width: 280px;
   height: auto;
@@ -144,106 +139,100 @@ div.inner-slider a.slider-link {
   list-style-type: none;
 }
 
-section.promo-ad div.promo-raspberry,
-section.promo-ad div.promo-chocolate {
+.promo-ad .promo-raspberry,
+.promo-ad .promo-chocolate {
   width: 514px;
   height: 229px;
   box-sizing: content-box;
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
-  font-family: "Roboto", "Arial", sans-serif;
   line-height: 22px;
   border-radius: 15px;
   padding-left: 21px;
   background-repeat: no-repeat;
 }
 
-section.promo-ad div.promo-raspberry h3,
-section.promo-ad div.promo-chocolate h3 {
+.promo-raspberry h3,
+.promo-chocolate h3 {
   color: rgba(255, 255, 255, 1);
   font-size: 35px;
-  font-family: "Roboto", "Arial", sans-serif;
   line-height: 41px;
   padding-left: 21px;
   padding-top: 22px;
 }
 
-section.promo-ad div.promo-raspberry {
+.promo-ad .promo-raspberry {
   background-image: url("../img/promo-raspberry-background.jpg");
 }
 
-section.promo-ad div.promo-chocolate {
+.promo-ad .promo-chocolate {
   background-image: url("../img/promo-chocolate-background.jpg");
 }
 
-section.promo-ad a.buttons {
+.promo-ad .buttons {
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  background-image:
+    linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border-radius: 40px;
   text-align: center;
   padding: 16px 25px 17px 24px;
 }
 
-section.hits-items ul,
-section.icecream-catalog ul.icecream-item-list {
+.hits-items ul,
+.icecream-catalog .icecream-item-list {
   list-style-type: none;
 }
 
-section.hits-items ul a,
-section.icecream-catalog ul.icecream-item-list a {
+.hits-items .icecream-link,
+.icecream-catalog .icecream-link {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
 }
 
-div.hits-icecream figure img,
-div.icecream-item figure img,
-section.order table.shopping-list tr td img.small-item-img {
+.hits-icecream img,
+.icecream-item img,
+.order .shopping-list .small-item-img {
   border-radius: 100%;
 }
 
-div.hits-icecream figure p.icecream-price,
-div.icecream-item figure p.icecream-price {
+.hits-icecream .icecream-price,
+.icecream-item .icecream-price {
   color: rgba(255, 255, 255, 1);
   font-size: 45px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-div.hits-icecream figure p.icecream-price span,
-div.icecream-item figure p.icecream-price span {
+.hits-icecream .icecream-price span,
+.icecream-item .icecream-price span {
   font-size: 30px;
 }
 
-section.advantages {
+.advantages {
   background-image: url("../img/waffle-background.jpg");
   width: 1146px;
   border-radius: 15px;
 }
 
-section.advantages p.about-us {
+.advantages .about-us {
   color: rgba(50, 50, 50, 1);
   font-size: 24px;
-  font-family: "Roboto", "Arial", sans-serif;
   line-height: 30px;
   background-repeat: no-repeat;
 }
 
-section.advantages ul.advantages-items li {
+.advantages .advantages-items li {
   color: rgba(50, 50, 50, 1);
   font-size: 16px;
-  font-family: "Roboto", "Arial", sans-serif;
   list-style-type: none;
 }
 
-article.blog {
+.blog {
   background-image: url("../img/srawberry-background.jpg");
   background-position: left;
   background-repeat: no-repeat;
@@ -252,149 +241,145 @@ article.blog {
   border-radius: 15px;
 }
 
-article.blog h2 {
+.blog h2 {
   color: rgba(50, 50, 50, 1);
   font-size: 16px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
 }
 
-article.blog a h3 {
+.blog h3 {
   color: rgba(50, 50, 50, 1);
   font-size: 24px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   line-height: 30px;
   text-decoration: underline;
 }
 
-section.mailing form.mailing-form {
+.mailing .mailing-form {
   background-image: url("../img/mailing-background.png");
   background-repeat: no-repeat;
+  font-family: "Roboto", "Arial", sans-serif;
   width: 560px;
   height: 220px;
 }
 
-section.mailing form.mailing-form button {
+.mailing-form button {
   border: none;
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  background-image:
+    linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border-radius: 40px;
   text-align: center;
   padding: 10px 25px 10px 24px;
 }
 
-section.mailing form.mailing-form input[type="email"] {
+.mailing-form input[type="email"] {
   font-size: 16px;
   font-family: "Roboto", "Arial", sans-serif;
   width: 369px;
   height: 42px;
 }
 
-section.contacts div.adress-tel-info {
+.contacts .adress-tel-info {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 15px;
   width: 302px;
   height: 305px;
 }
 
-section.contacts div.adress-tel-info p:not(b) {
+.adress-tel-info p:not(b) {
   color: rgba(51, 51, 51, 1);
   font-size: 14px;
-  font-family: "Roboto", "Arial", sans-serif;
 }
 
-section.contacts div.adress-tel-info b {
+.adress-tel-info b {
   color: rgba(51, 51, 51, 1);
   font-size: 18px;
-  font-family: "Roboto", "Arial", sans-serif;
   line-height: 24px;
 }
 
-section.contacts div.adress-tel-info a.buttons {
+.adress-tel-info .buttons {
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  background-image:
+    linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   padding: 10px 25px 10px 24px;
 }
 
-section.contacts div.adress-tel-info a.buttons:hover,
-div.sing-in-form form button:hover,
-div.feedback form button:hover,
-section.mailing form.mailing-form button:hover,
-section.promo-ad a.buttons:hover,
-div.inner-slider a.slider-link:hover,
-section.icecream-catalog ul.icecream-item-list div.icecream-item button:hover,
-section.hits-items li div.hits-icecream button.buttons:hover {
-  background-image: linear-gradient(to bottom,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.2)),
+.adress-tel-info a:hover,
+.sing-in-form .buttons:hover,
+.feedback-form .feedback-send:hover,
+.mailing-form .buttons:hover,
+.promo-ad .buttons:hover,
+.inner-slider .slider-link:hover,
+.icecream-item .buttons:hover,
+.hits-icecream .buttons:hover {
+  background-image:
+  linear-gradient(to bottom,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)),
+  linear-gradient(to top,rgb(231, 74, 53),rgb(242, 104, 67));
+}
+
+.adress-tel-info a:focus,
+.sing-in-form .buttons:focus,
+.feedback-form .feedback-send:focus,
+.mailing-form .buttons:focus,
+.promo-ad .buttons:focus,
+.inner-slider .slider-link:focus,
+.icecream-item .buttons:focus,
+.hits-icecream .buttons:focus {
+  background-image:
+    linear-gradient(to bottom,rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
 
-section.contacts div.adress-tel-info a.buttons:focus,
-div.sing-in-form form button:focus,
-div.feedback form button:focus,
-section.mailing form.mailing-form button:focus,
-section.promo-ad a.buttons:focus,
-div.inner-slider a.slider-link:focus,
-section.icecream-catalog ul.icecream-item-list div.icecream-item button:focus,
-section.hits-items li div.hits-icecream button.buttons:focus {
-  background-image: linear-gradient(to bottom,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.2)),
-    linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
-}
-
-section.contacts div.adress-tel-info a.buttons:active,
-div.sing-in-form form button:active,
-div.feedback form button:active,
-section.mailing form.mailing-form button:active,
-section.promo-ad a.buttons:active,
-div.inner-slider a.slider-link:active,
-section.icecream-catalog ul.icecream-item-list div.icecream-item button:active,
-section.hits-items li div.hits-icecream button.buttons:active {
+.adress-tel-info a:active,
+.sing-in-form .buttons:active,
+.feedback-form .feedback-send:active,
+.mailing-form .buttons:active,
+.promo-ad .buttons:active,
+.inner-slider .slider-link:active,
+.icecream-item .buttons:active,
+.hits-icecream .buttons:active {
   box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
-  background-image: linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67)), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  background-image:
+    linear-gradient(to bottom,rgb(231, 74, 53),rgb(242, 104, 67)),
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.07),rgba(0, 0, 0, 0.07));
 }
 
-footer.main-footer ul {
+.main-footer ul {
   list-style-type: none;
 }
 
-footer.main-footer ul a {
+.footer-links a {
   color: rgba(255, 255, 255, 1);
   font-size: 13px;
   line-height: 18px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
 }
 
-footer.main-footer div.copyright p {
+.copyright p {
   color: rgba(255, 255, 255, 1);
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
 }
 
-footer.main-footer div.copyright p>a {
+.copyright p>a {
   font: inherit;
   color: inherit;
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
 }
 
-div.sing-in-form {
+.sing-in-form {
   display: none;
   background-color: rgba(248, 247, 244, 1);
   width: 276px;
@@ -403,50 +388,51 @@ div.sing-in-form {
   border-radius: 5px;
 }
 
-div.sing-in-form form input {
+.sing-in-form input {
   font-size: 14px;
+  font-weight: bold;
   line-height: 24px;
   font-family: "Roboto", "Arial", sans-serif;
   width: 241px;
   height: 45px;
 }
 
-div.sing-in-form form button {
+.sing-in-form .buttons {
   color: rgba(255, 255, 255, 1);
   border: none;
   font-size: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   padding: 10px 25px 10px 24px;
 }
 
-div.sing-in-form ul.login-links {
+.sing-in-form .login-links {
   list-style-type: none;
 }
 
-div.sing-in-form ul.login-links a {
+.login-links a {
   color: rgba(50, 50, 50, 1);
   font-size: 13px;
   line-height: 24px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   border-bottom: solid rgba(50, 50, 50, 1) 1px;
 }
 
-div.search-form {
+.search-form {
   display: none;
   background-color: rgba(248, 247, 244, 1);
   width: 344px;
   height: 84px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
+  font-weight: bold;
 }
 
-div.search-form form.search-form input {
+.search-form input {
   font-size: 14px;
   font-family: "Roboto", "Arial", sans-serif;
   width: 310px;
@@ -455,103 +441,99 @@ div.search-form form.search-form input {
   margin-left: 14px;
 }
 
-div.feedback form {
+.feedback form {
   display: none;
   background-color: rgba(248, 247, 244, 1);
   font-family: "Roboto", "Arial", sans-serif;
+  font-weight: bold;
   width: 478px;
   height: 442px;
 }
 
-div.feedback form p {
+.feedback p {
   color: rgba(50, 50, 50, 1);
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 24px;
 }
 
-div.feedback form button {
+.feedback .feedback-send {
   color: rgba(255, 255, 255, 1);
   border: none;
   font-size: 18px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  background-image:
+    linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   padding: 10px 25px 10px 24px;
 }
 
-nav.site-navigation p.full-cart a {
+.full-cart a {
   color: rgba(50, 50, 50, 1);
 }
 
-nav.site-navigation p.full-cart {
+.site-navigation .full-cart {
   background-color: rgba(248, 247, 244, 1);
   width: 93px;
   height: 32px;
   border-radius: 50px;
 }
 
-main div.breadcrumb ul {
+.breadcrumb ul {
   list-style: none;
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
   line-height: 16px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
 }
 
-main div.breadcrumb ul li a {
+.breadcrumb a {
   font: inherit;
   color: inherit;
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
 }
 
-main.container h1 {
-  font-family: "Roboto", "Arial", sans-serif;
+.container h1 {
   font-size: 35px;
   color: rgba(255, 255, 255, 1);
   font-weight: bold;
 }
 
-main section.filter fieldset {
+.filter fieldset {
   border: none;
 }
 
-main section.filter form.catalog-filter .filter-type {
-  font-family: "Roboto", "Arial", sans-serif;
+.catalog-filter .filter-type {
   font-size: 14px;
   line-height: 16px;
   color: rgba(255, 255, 255, 1);
   font-weight: 500;
 }
 
-main section.filter form.catalog-filter li {
+.catalog-filter li {
   list-style-type: none;
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: rgba(255, 255, 255, 1);
   font-weight: 500;
 }
 
-section.filter select.sorting,
-section.filter input[type="range"],
-section.filter fieldset.fat-content ul,
-section.filter fieldset.flavors-type ul {
+.filter .sorting,
+.filter input[type="range"],
+.fat-content ul,
+.flavors-type ul {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
 }
 
-section.filter select.sorting:hover,
-section.filter li input[type="range"]:hover,
-section.filter fieldset.fat-content ul li:hover,
+.filter .sorting:hover,
+.filter input[type="range"]:hover,
+.fat-content li:hover,
 section.filter fieldset.flavors-type ul li:hover {
   color: rgba(50, 50, 50, 1);
 }
 
-section.filter form.catalog-filter button {
+.catalog-filter button {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -563,51 +545,61 @@ section.filter form.catalog-filter button {
   border: 2px solid rgba(255, 255, 255, 1);
 }
 
-section.filter form.catalog-filter button:hover,
-section.filter form.catalog-filter button:active {
+.catalog-filter button:hover,
+.catalog-filter button:active {
   color: rgb(50, 50, 50);
   background-color: rgb(255, 255, 255);
 }
 
-section.filter form.catalog-filter button:active {
+.catalog-filter button:active {
   color: rgb(50, 50, 50);
   box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
   background-color: rgb(237, 237, 237);
 }
 
-section.icecream-catalog ul.icecream-item-list div.icecream-item button,
-section.hits-items li div.hits-icecream button.buttons {
+.icecream-item .buttons,
+.hits-icecream .buttons {
   color: rgba(255, 255, 255, 1);
   border: none;
   font-size: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   padding: 15px 17px 15px 17px;
 }
 
-main div.paginator li {
+.paginator li {
   list-style-type: none;
 }
 
-main div.paginator li a {
+.paginator a {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
 }
 
-main div.paginator li a:hover {
+.paginator a:hover {
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 100%;
+  border-radius: 50%;
   width: 26px;
   height: 26px;
 }
 
-main div.paginator li.current-page-number {
+.paginator a:active,
+.paginator a:focus
+ {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(50, 50, 50, 1);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+
+}
+
+.paginator .current-page-number {
   color: rgba(50, 50, 50, 1);
   background-color: rgb(255, 255, 255);
   border-radius: 100%;
@@ -615,10 +607,9 @@ main div.paginator li.current-page-number {
   height: 26px;
 }
 
-section.order {
+.order {
   display: none;
   color: rgba(50, 50, 50, 1);
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 13px;
   background-color: rgba(248, 247, 245, 1);
   border-radius: 5px;
@@ -626,22 +617,21 @@ section.order {
   height: 243px;
 }
 
-section.order tr td a {
+.order a {
   color: inherit;
 }
 
-section.order tr.total td {
-  font-family: "Roboto", "Arial", sans-serif;
+.total td {
   font-size: 13px;
   font-weight: bold;
   border-top: 1px solid #cacac7;
 }
 
-section.order table.shopping-list span.price-per-one {
+.shopping-list .price-per-one {
   color: rgb(188, 188, 186);
 }
 
-section.order a.buttons {
+.order .buttons {
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -652,47 +642,73 @@ section.order a.buttons {
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-nav.site-navigation ul.site-menu a.current-page {
+.site-menu .current-page {
   background-color: rgba(208, 112, 88, 0.8);
   border-radius: 40px;
 }
 
-nav.site-navigation ul.site-menu ul.sub-menu li.current-menu-item {
+.sub-menu .current-menu-item {
   background-color: rgb(208, 112, 88);
 }
 
-section.hits-items div.hits-icecream:hover,
-section.icecream-catalog div.icecream-item:hover,
-section.hits-items div.hits-icecream:focus,
-section.icecream-catalog div.icecream-item:focus {
+.hits-items .hits-icecream:hover,
+.icecream-catalog .icecream-item:hover,
+.hits-items .hits-icecream:focus,
+.icecream-catalog .icecream-item:focus {
   width: 294px;
   height: 406px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgba(248, 247, 244, 0.2);
 }
 
-section.hits-items div.hits-icecream a:hover,
-section.icecream-catalog div.icecream-item a:hover,
-div.footer-links a:hover,
-div.copyright a.academy-link:hover,
-ection.hits-items div.hits-icecream a:focus,
-section.icecream-catalog div.icecream-item a:focus,
-div.footer-links a:focus,
-div.copyright a.academy-link:focus,
-section.hits-items div.hits-icecream a:active,
-section.icecream-catalog div.icecream-item a:active,
-div.footer-links a:active,
-div.copyright a.academy-link:active {
+.hits-icecream a:hover,
+.icecream-item a:hover,
+.footer-links a:hover,
+.copyright .academy-link:hover,
+.hits-icecream a:focus,
+.icecream-item a:focus,
+.footer-links a:focus,
+.copyright .academy-link:focus,
+.hits-icecream a:active,
+.icecream-item a:active,
+.footer-links a:active,
+.copyright .academy-link:active {
   color: rgb(255, 188, 158);
   border-bottom: solid rgb(255, 188, 158) 1px;
 }
 
-article.blog a h3:hover,
-article.blog a h3:focus,
-article.blog a h3:active,
-div.sing-in-form ul.login-links li a:hover,
-div.sing-in-form ul.login-links li a:focus,
-div.sing-in-form ul.login-links li a:active {
+.login-links a:hover,
+.login-links a:focus,
+.login-links a:active {
   color: rgb(232, 77, 55);
   border-bottom: solid rgb(232, 77, 55) 1px;
+}
+
+.blog h3:hover,
+.blog h3:active,
+.blog h3:focus {
+  color: rgb(232, 77, 55);
+}
+
+.feedback-form input:hover,
+.search-form input:hover,
+.sing-in-form input:hover,
+.feedback-form input:focus,
+.search-form input:focus,
+.sing-in-form input:focus {
+  border: solid rgb(199, 198, 197) 2px;
+}
+
+.feedback-form input:active,
+.search-form input:active,
+.sing-in-form input:active,
+.feedback-form input:focus,
+.search-form input:focus,
+.sing-in-form input:focus {
+  border: solid rgb(143, 189, 236) 2px;
+}
+
+.sorting:hover {
+  color: rgb(50, 50, 50);
+  background-color: rgba(255, 255, 255, 0.2);
 }
