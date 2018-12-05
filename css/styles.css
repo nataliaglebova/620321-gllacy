@@ -20,24 +20,14 @@ a {
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
 }
 
-.sub-menu li:hover,
-.sub-menu li:focus {
-  background-color: rgb(251, 222, 215);
-}
-
-.sub-menu li:active {
-  background-color: rgb(246, 181, 165);
-}
-
 .sub-menu li {
   background-color: rgb(248, 247, 244);
   width: 143px;
-  padding-top: 16px;
-  padding-left: 16px;
 }
 
-.sub-menu li a {
+.sub-menu a {
   color: rgb(50, 50, 50);
+  font-size: 14px;
   font-weight: normal;
   line-height: 16px;
 }
@@ -49,12 +39,21 @@ a {
 .sub-menu li:first-child {
   border-bottom: 1px solid rgb(235, 234, 231);
 }
+.sub-menu li:hover,
+.sub-menu li:focus {
+  background-color: rgb(251, 222, 215);
+}
+
+.sub-menu li:active {
+  background-color: rgb(246, 181, 165);
+}
 
 .empty-cart a,
 .log-in a {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
   font-weight: normal;
+  line-height: 16px;
 }
 
 .log-in {
@@ -95,7 +94,7 @@ a {
   border-radius: 50px;
 }
 
-.site-navigation .schedule {
+.main-header .schedule {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
   font-weight: bold;
@@ -107,7 +106,7 @@ a {
   display: block;
   font-size: 22px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 24px;
 }
 
 .slider-slides {
@@ -118,13 +117,14 @@ a {
   color: rgba(255, 255, 255, 1);
   font-size: 60px;
   font-weight: bold;
-  line-height: 61px;
+  line-height: 60px;
 }
 
 .inner-slider .slider-link {
   color: rgba(255, 255, 255, 1);
   font-size: 32px;
   font-weight: bold;
+  line-height: 44px;
   background-image:
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
@@ -162,10 +162,14 @@ a {
 }
 
 .promo-ad .promo-raspberry {
+  /* Для случая, если не загрузится картинка*/
+  background-color: rgba(156, 19, 45, 1);
   background-image: url("../img/promo-raspberry-background.jpg");
 }
 
 .promo-ad .promo-chocolate {
+  /* Для случая, если не загрузится картинка*/
+  background-color: rgba(63, 38, 26, 1);
   background-image: url("../img/promo-chocolate-background.jpg");
 }
 
@@ -173,6 +177,7 @@ a {
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
   font-weight: bold;
+  line-height: 24px;
   background-image:
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
@@ -191,29 +196,33 @@ a {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   font-weight: normal;
+  line-height: 22px;
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
 }
 
 .hits-icecream img,
 .icecream-item img,
-.order .shopping-list .small-item-img {
+.shopping-list .small-item-img {
   border-radius: 100%;
 }
 
 .hits-icecream .icecream-price,
 .icecream-item .icecream-price {
   color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
   font-size: 45px;
   font-weight: bold;
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  line-height: 45px;
 }
 
-.hits-icecream .icecream-price span,
-.icecream-item .icecream-price span {
+.icecream-price span{
   font-size: 30px;
+  line-height: 45px;
 }
 
 .advantages {
+  /* Для случая, если не загрузится картинка*/
+  background-color: rgba(235, 223, 195, 1);
   background-image: url("../img/waffle-background.jpg");
   width: 1146px;
   border-radius: 15px;
@@ -226,13 +235,16 @@ a {
   background-repeat: no-repeat;
 }
 
-.advantages .advantages-items li {
+.advantages-items li {
   color: rgba(50, 50, 50, 1);
   font-size: 16px;
+  line-height: 22px;
   list-style-type: none;
 }
 
 .blog {
+  /* Для случая, если не закрузится картинка*/
+  background-color: rgba(251, 197, 209, 1);
   background-image: url("../img/srawberry-background.jpg");
   background-position: left;
   background-repeat: no-repeat;
@@ -245,6 +257,7 @@ a {
   color: rgba(50, 50, 50, 1);
   font-size: 16px;
   font-weight: normal;
+  line-height: 22px;
 }
 
 .blog h3 {
@@ -256,11 +269,14 @@ a {
 }
 
 .mailing .mailing-form {
+  /* Для случая, если не закрузится картинка*/
+  background-color: rgba(248, 247, 244, 1);
   background-image: url("../img/mailing-background.png");
   background-repeat: no-repeat;
   font-family: "Roboto", "Arial", sans-serif;
+  line-height: 22px;
   width: 560px;
-  height: 220px;
+  min-height: 220px;
 }
 
 .mailing-form button {
@@ -269,6 +285,7 @@ a {
   font-size: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
+  line-height: 24px;
   background-image:
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
@@ -282,18 +299,20 @@ a {
   font-family: "Roboto", "Arial", sans-serif;
   width: 369px;
   height: 42px;
+  line-height: 24px;
 }
 
 .contacts .adress-tel-info {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 15px;
   width: 302px;
-  height: 305px;
+  min-height: 305px;
 }
 
 .adress-tel-info p:not(b) {
   color: rgba(51, 51, 51, 1);
   font-size: 14px;
+  line-height: 20px;
 }
 
 .adress-tel-info b {
@@ -306,6 +325,7 @@ a {
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
   font-weight: bold;
+  line-height: 24px;
   background-image:
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
@@ -403,6 +423,7 @@ a {
   font-size: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
+  line-height: 24px;
   background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
@@ -435,8 +456,9 @@ a {
 .search-form input {
   font-size: 14px;
   font-family: "Roboto", "Arial", sans-serif;
+  line-height: 24px;
   width: 310px;
-  height: 44px;
+  min-height: 44px;
   margin-top: 14px;
   margin-left: 14px;
 }
@@ -452,6 +474,7 @@ a {
 
 .feedback p {
   color: rgba(50, 50, 50, 1);
+  line-height: 28px;
   font-size: 24px;
 }
 
@@ -460,6 +483,7 @@ a {
   border: none;
   font-size: 18px;
   font-weight: bold;
+  line-height: 24px;
   background-image:
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
@@ -470,12 +494,13 @@ a {
 
 .full-cart a {
   color: rgba(50, 50, 50, 1);
+  line-height: 16px;
 }
 
 .site-navigation .full-cart {
   background-color: rgba(248, 247, 244, 1);
   width: 93px;
-  height: 32px;
+  min-height: 32px;
   border-radius: 50px;
 }
 
@@ -494,8 +519,9 @@ a {
 }
 
 .container h1 {
-  font-size: 35px;
   color: rgba(255, 255, 255, 1);
+  font-size: 35px;
+  line-height: 41px;
   font-weight: bold;
 }
 
@@ -529,7 +555,7 @@ a {
 .filter .sorting:hover,
 .filter input[type="range"]:hover,
 .fat-content li:hover,
-section.filter fieldset.flavors-type ul li:hover {
+.flavors-type li:hover {
   color: rgba(50, 50, 50, 1);
 }
 
@@ -564,6 +590,7 @@ section.filter fieldset.flavors-type ul li:hover {
   font-size: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
+  line-height: 24px;
   background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
@@ -579,6 +606,7 @@ section.filter fieldset.flavors-type ul li:hover {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   font-weight: bold;
+  line-height: 18px;
 }
 
 .paginator a:hover {
@@ -611,6 +639,7 @@ section.filter fieldset.flavors-type ul li:hover {
   display: none;
   color: rgba(50, 50, 50, 1);
   font-size: 13px;
+  line-height: 16px;
   background-color: rgba(248, 247, 245, 1);
   border-radius: 5px;
   width: 543px;
@@ -624,6 +653,7 @@ section.filter fieldset.flavors-type ul li:hover {
 .total td {
   font-size: 13px;
   font-weight: bold;
+  line-height: 18px;
   border-top: 1px solid #cacac7;
 }
 
@@ -636,6 +666,7 @@ section.filter fieldset.flavors-type ul li:hover {
   font-size: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
+  line-height: 24px;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border-radius: 40px;
   text-align: center;
@@ -711,4 +742,13 @@ section.filter fieldset.flavors-type ul li:hover {
 .sorting:hover {
   color: rgb(50, 50, 50);
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sub-menu {
+  visibility: hidden;
+  position: absolute;
+}
+
+.calatog-menu:hover .sub-menu {
+  visibility: visible;
 }
