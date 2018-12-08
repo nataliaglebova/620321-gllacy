@@ -29,6 +29,7 @@
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="about.html">О Компании</a></li>
       </ul>
+    <div class="user-field">
       <p class="main-search">
         <a href="#">Поиск</a>
       </p>
@@ -38,11 +39,13 @@
       <p class="full-cart">
         <a href="#">2 товара</a>
       </p>
+    </div>
       <p class="schedule">С 10 до 20, ежедневно
-        <span class="header-tel">8 812 450-25-25</span></p>
+        <span class="header-tel">8 812 450-25-25</span>
+      </p>
     </nav>
   </header>
-  <main class="container">
+  <main class="main-container">
     <div class="breadcrumb">
       <ul>
         <li><a href="index.html">Главная</a></li>
@@ -50,12 +53,12 @@
         <li>Сливочное</li>
       </ul>
     </div>
-    <h1>Сливочное мороженое</h1>
+    <h1 class="catalog-heading">Сливочное мороженое</h1>
     <!--Блок фильтрации-->
     <section class="filter">
       <h2 class="visually-hidden">Фильтры</h2>
       <form class="catalog-filter" action="index.html" method="get">
-        <div>
+        <div class="sorting-wrap" >
           <label class="filter-type">Сортировка:
             <select class="sorting" name="sorting">
               <option value="popular">по популярности</option>
@@ -65,12 +68,12 @@
             </select>
           </label>
         </div>
-        <div>
+        <div class="range-wrap">
           <label class="filter-type"> Цена: 100 руб. – 500 руб.
             <input type="range" name="price-range" value="5" min="100" max="500">
           </label>
         </div>
-        <div>
+        <div class="fat-filter-wrap">
           <fieldset class="fat-content">
             <legend class="filter-type">Жирность:</legend>
             <ul>
@@ -81,7 +84,7 @@
             </ul>
           </fieldset>
         </div>
-        <div>
+        <div class="flavors-wrap">
           <fieldset class="flavors-type">
             <legend class="filter-type">Наполнители:</legend>
             <ul>
@@ -96,7 +99,6 @@
         <button type="submit" name="apply-filter">Применить</button>
       </form>
     </section>
-
     <!-- Перечень мороженого-->
     <section class="icecream-catalog">
       <h2 class="visually-hidden">Список товаров</h2>
@@ -111,7 +113,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -124,7 +126,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-кофейное с кусочками шоколада</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -137,7 +139,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-клубничное с присыпкой из белого шоколада</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -150,7 +152,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное крем-брюле с карамельной подливкой</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -163,7 +165,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с брусничным джемом</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -176,7 +178,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-черничное с цельными ягодами черники</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -189,7 +191,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-лимонное с карамельной присыпкой</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -202,7 +204,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с шоколадной стружкой</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -215,7 +217,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-ванильное с кусочками шоколада</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -228,7 +230,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочноe с ментоловым сиропом</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -241,7 +243,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с кусочками черного шоколада</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -254,7 +256,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с мятным сиропом</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons" hidden>Быстрый просмотр</button>
           </div>
         </li>
       </ul>
@@ -271,7 +273,7 @@
       </ul>
     </div>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer catalog-footer">
     <!-- Ссылки на соц. сети-->
     <div class="social-links">
       <h3 class="visually-hidden">Ссылки на социальные сети</h3>
