@@ -262,6 +262,7 @@ a {
 .mailing .mailing-form {
   /* Для случая, если не закрузится картинка*/
   background-color: rgba(248, 247, 244, 1);
+  color: rgba(90, 90, 90, 1);
   background-image: url("../img/mailing-background.png");
   background-repeat: no-repeat;
   font-family: "Roboto", "Arial", sans-serif;
@@ -301,7 +302,7 @@ a {
   min-height: 305px;
 }
 
-.adress-tel-info p:not(b) {
+.adress-tel-info p{
   color: rgba(51, 51, 51, 1);
   font-size: 14px;
   line-height: 20px;
@@ -386,7 +387,7 @@ a {
   font-weight: normal;
 }
 
-.copyright p>a {
+.copyright a:not(.htmlacademy-logo) {
   font: inherit;
   color: inherit;
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
