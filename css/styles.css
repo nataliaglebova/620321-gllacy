@@ -7,6 +7,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .site-menu,
 .sub-menu {
   list-style-type: none;
@@ -18,9 +23,21 @@ a {
   font-weight: bold;
   line-height: 18px;
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+
+}
+
+.main-menu>a:hover,
+.main-menu>a:focus {
+  color: rgb(50, 50, 50);
+  background-color: rgb(247, 246, 243);
+  border-radius: 30px;
+  padding: 5px 10px 5px 15px;
 }
 
 .sub-menu li {
+  padding: 0 0;
+  margin: 0 0;
+  display: block;
   background-color: rgb(248, 247, 244);
   width: 143px;
 }
@@ -30,6 +47,11 @@ a {
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
+  border: none;
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  display: inline-block;
 }
 
 .sub-menu .new-items {
@@ -53,14 +75,14 @@ a {
 .log-in a {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 16px;
 }
 
 .log-in {
-  width: 93px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
+  margin-right: 10px;
 }
 
 .log-in a:active {
@@ -75,7 +97,6 @@ a {
 }
 
 .empty-cart {
-  width: 93px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
 }
@@ -107,11 +128,7 @@ a {
   line-height: 24px;
 }
 
-.slider-slides {
-  text-align: center;
-}
-
-.slider-slides .slides-text {
+.slides-text {
   color: rgba(255, 255, 255, 1);
   font-size: 60px;
   font-weight: bold;
@@ -259,8 +276,8 @@ a {
   text-decoration: underline;
 }
 
-.mailing .mailing-form {
-  /* Для случая, если не закрузится картинка*/
+.mailing {
+  /* Для случая, если не загрузится картинка*/
   background-color: rgba(248, 247, 244, 1);
   color: rgba(90, 90, 90, 1);
   background-image: url("../img/mailing-background.png");
@@ -269,6 +286,14 @@ a {
   line-height: 22px;
   width: 560px;
   border-radius: 10px;
+  /*height: 100%; не помогло*/
+}
+
+.mailing p {
+  margin-bottom: 37px;
+  margin-top: 35px;
+  margin-left: 26px;
+  margin-right: 24px;
 }
 
 .mailing-form button {
@@ -289,20 +314,25 @@ a {
 .mailing-form input[type="email"] {
   font-size: 16px;
   font-family: "Roboto", "Arial", sans-serif;
-  width: 369px;
+  width: 355px;
   height: 42px;
   line-height: 24px;
+  margin-bottom: 36px;
+  margin-left: 27px;
+  margin-right: 7px;
+  padding-left: 15px;
+  border: solid 1px rgb(211, 211, 210);
+  border-radius: 5px;
 }
 
 .contacts .adress-tel-info {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 15px;
-  width: 302px;
   /*временно для сеток*/
   min-height: 305px;
 }
 
-.adress-tel-info p{
+.adress-tel-info p {
   color: rgba(51, 51, 51, 1);
   font-size: 14px;
   line-height: 20px;
@@ -328,40 +358,19 @@ a {
   padding: 10px 25px 10px 24px;
 }
 
-.adress-tel-info a:hover,
-.sing-in-form .buttons:hover,
-.feedback-form .feedback-send:hover,
-.mailing-form .buttons:hover,
-.promo-ad .buttons:hover,
-.inner-slider .slider-link:hover,
-.icecream-item .buttons:hover,
-.hits-icecream .buttons:hover {
+.buttons:hover {
   background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
 
-.adress-tel-info a:focus,
-.sing-in-form .buttons:focus,
-.feedback-form .feedback-send:focus,
-.mailing-form .buttons:focus,
-.promo-ad .buttons:focus,
-.inner-slider .slider-link:focus,
-.icecream-item .buttons:focus,
-.hits-icecream .buttons:focus {
+.buttons:focus {
   background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
 
-.adress-tel-info a:active,
-.sing-in-form .buttons:active,
-.feedback-form .feedback-send:active,
-.mailing-form .buttons:active,
-.promo-ad .buttons:active,
-.inner-slider .slider-link:active,
-.icecream-item .buttons:active,
-.hits-icecream .buttons:active {
+.buttons:active {
   box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
   background-image:
     linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67)),
@@ -391,6 +400,10 @@ a {
   font: inherit;
   color: inherit;
   border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+}
+
+.copyright img {
+  height: 35px;
 }
 
 .sing-in-form {
@@ -493,9 +506,8 @@ a {
 
 .site-navigation .full-cart {
   background-color: rgba(248, 247, 244, 1);
-  width: 93px;
-  min-height: 32px;
   border-radius: 50px;
+  font-weight: 500;
 }
 
 .breadcrumb ul {
@@ -737,18 +749,31 @@ a {
 .sub-menu {
   visibility: hidden;
   position: absolute;
+  left: -40px;
+  top: 30px;
 }
 
-.calatog-menu:hover .sub-menu {
+.calatog-menu {
+  position: relative;
+}
+
+.calatog-menu:hover .sub-menu,
+.calatog-menu:active .sub-menu,
+.calatog-menu:focus .sub-menu {
   visibility: visible;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Стили для сеток*/
@@ -760,7 +785,7 @@ a {
 }
 
 .main-logo {
-  align-items: flex-end;
+  align-self: flex-end;
   margin-left: 27px;
   margin-top: 9px;
   width: 152px;
@@ -769,18 +794,18 @@ a {
 .site-menu {
   margin: 0;
   padding: 0;
-  width: 354px;
-  margin-left: 22px;
+  padding-left: 22px;
   margin-top: 30px;
   margin-bottom: 27px;
-  padding-right: 35px;
 }
 
 .user-field {
-  margin-left: 319px;
+  margin-left: auto;
   width: 245px;
   margin-right: 27px;
-  margin-top: 20px;
+  align-items: center;
+  padding: 0 0;
+  margin-top: 0;
 }
 
 /* для удобства понимания расположения пунктов меню*/
@@ -789,10 +814,10 @@ a {
 }
 
 .schedule {
-  margin-left: 1007px;
+  margin-left: 1005px;
   width: 168px;
-  /*вынужденный отрицательный отступ*/
-  margin-top: -5px;
+  /*вынужденный отрицательный отступ
+  margin-top: -5px;*/
   text-align: right;
 }
 
@@ -846,6 +871,7 @@ a {
   margin-left: 24px;
   margin-bottom: 40px;
   justify-content: flex-start;
+  height: 100%;
 }
 
 /*Временно для сеток*/
@@ -860,19 +886,22 @@ a {
 }
 
 .main-map {
-  position: absolute;
-  z-index: -1;
+  width: 1200px;
+  position: relative;
 }
 
 .adress-tel-info {
-  width: 302px;
+  width: 250px;
   margin-left: 870px;
   margin-right: 27px;
   margin-top: 64px;
   margin-bottom: 64px;
   padding-left: 24px;
-  padding-right: 27px;
+  padding-right: 54px;
   padding-top: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .main-footer {
@@ -955,12 +984,18 @@ a {
 .promo-wrapper .promo-raspberry {
   margin-right: 26px;
 }
+.promo-raspberry,.promo-chocolate{
+  display: flex;
+  flex-wrap: wrap;
 
-.promo-chocolate p,
-.promo-raspberry p {
-  padding-bottom: 45px;
-  padding-right: 20px;
-  padding-left: 20px;
+}
+.promo-raspberry .buttons,
+.promo-chocolate .buttons
+{
+  margin-left: auto;
+  margin-bottom: 23px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .promo-chocolate h3,
@@ -969,12 +1004,11 @@ a {
   padding-left: 20px;
   margin: 0 0;
 }
-
-.promo-ad .buttons {
-  margin-left: 370px;
-  margin-bottom: 23px;
+.promo-chocolate p,
+.promo-raspberry p {
+  padding-right: 20px;
+  padding-left: 20px;
 }
-
 /* временно для сеток*/
 figure {
   margin: 0 0;
@@ -1051,4 +1085,240 @@ figure {
 
 .flavors-wrap {
   width: 704px;
+}
+
+/*микросетки и иконки*/
+.site-menu {
+  display: flex;
+  width: 429px;
+}
+
+.site-menu li {
+  display: inline-block;
+  margin-right: 20px;
+  padding-left: 5px;
+}
+
+.site-menu li:nth-child(2n) {
+  margin-right: 25px;
+}
+
+.user-field {
+  display: flex;
+}
+
+.main-search {
+  padding-right: 35px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.main-search::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background-position: center;
+  top: -17px;
+  cursor: pointer;
+}
+
+.log-in a {
+  display: inline-block;
+  padding-left: 42px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.log-in a::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  background-image: url("../img/enter-icon.svg");
+  background-repeat: no-repeat;
+  left: 15px;
+  top: 6px;
+}
+
+.empty-cart a {
+  position: relative;
+  padding-left: 46px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+.empty-cart a::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  left: 17px;
+  top: 6px;
+}
+
+.schedule {
+  margin-top: 0;
+}
+
+.site-menu a:active {
+  color: rgb(50, 50, 50);
+  box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+  background-color: rgb(237, 237, 237);
+  border-radius: 30px;
+  padding: 5px 10px 5px 15px;
+}
+
+.current-page {
+  background-color: rgba(208, 112, 88, 1);
+  border-radius: 30px;
+  padding: 5px 10px 5px 15px;
+  margin-left: -12px;
+  margin-right: -10px;
+  border: none;
+}
+
+.catalog-menu .user-field {
+  margin-left: 280px;
+  align-self: center;
+}
+
+.full-cart p {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.full-cart a {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  display: inline-block;
+  width: 70px;
+}
+
+.full-cart a::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  background-image: url("../img/full-cart-icon.svg");
+  background-repeat: no-repeat;
+  left: 15px;
+  top: 6px;
+}
+/*стилизация слайдера*/
+.site-wrap {
+  background-color: rgb(125, 157, 146);
+  background-image: url("../img/icecream-cones-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.slider {
+  position: relative;
+  padding-top: 270px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.slider-list {
+  margin: 0 0;
+  padding: 0 0;
+  list-style: none;
+}
+
+.slides-text {
+  width: 675px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: inline-block;
+  padding: 12px 44px;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+}
+.slider .buttons {
+  margin-top: 30px;
+}
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+  font-size: 0;
+  top:450px;
+}
+.slide {
+  display: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+#product-1:checked ~ .site-wrap #slide-1,
+#product-2:checked ~ .site-wrap #slide-2,
+#product-3:checked ~ .site-wrap #slide-3 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrap label[for="product-1"],
+#product-2:checked ~ .site-wrap label[for="product-2"],
+#product-3:checked ~ .site-wrap label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+#product-1:checked ~ .site-wrap {
+  background-color: rgb(132,157,143);
+  background-image: url("../img/icecream-cones-1.png");
+}
+
+#product-2:checked ~ .site-wrap {
+  background-color: rgb(137,150,166);
+  background-image: url("../img/icecream-cones-2.png");
+}
+
+#product-3:checked ~ .site-wrap {
+  background-color: rgb(161,143,136);
+  background-image: url("../img/icecream-cones-3.png");
 }
