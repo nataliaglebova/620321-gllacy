@@ -11,6 +11,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+.site-container {
+width:1250px;
+margin:0 auto;
+padding-left:10px;
+padding-right:10px;
+
+}
 
 .site-navigation {
   display: flex;
@@ -64,7 +71,7 @@ img {
   padding-left: 5px;
 }
 
-.site-menu a:active {
+.site-menu a:not(.sub-menu>a):active {
   color: rgb(50, 50, 50);
   box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
   background-color: rgb(237, 237, 237);
@@ -116,48 +123,48 @@ img {
   border-bottom: 1px solid rgb(235, 234, 231);
 }
 
-.site-menu .current-page {
-  background-color: rgba(208, 112, 88, 0.8);
-  border-radius: 40px;
-}
-
 .sub-menu .current-menu-item {
   background-color: rgb(208, 112, 88);
 }
+.current-menu-item a{
+  color: rgb(255, 255, 255);
+}
 
-.sub-menu {
+.calatog-menu{
+  position: relative;
+}
+.sub-menu-wrap{
   visibility: hidden;
   position: absolute;
   left: -40px;
-  top: 30px;
+  top: 28px;
+  z-index: 1;
+  padding-top: 3px;
 }
 
-.calatog-menu {
-  position: relative;
-}
-
-/*не помогло*/
-.sub-menu-wrap:hover .sub-menu,
-.calatog-menu:active .sub-menu,
-.calatog-menu:focus .sub-menu {
+.calatog-menu:hover .sub-menu-wrap,
+.calatog-menu:active .sub-menu-wrap,
+.calatog-menu:focus .sub-menu-wrap {
   visibility: visible;
 }
 
 .current-page {
-  background-color: rgba(208, 112, 88, 1);
   border-radius: 30px;
-  padding: 5px 10px 5px 15px;
-  margin-left: -12px;
-  margin-right: -10px;
-  border: none;
+  position: relative;
 }
+.current-page>a{
+  background-color: rgba(208, 112, 88, 1);
+  padding: 7px 13px 7px 14px;
+  border-radius: 40px;
+}
+
 
 .user-field {
   width: auto;
-  margin-right: 52px;
+  margin-right: 54px;
   align-items: center;
   padding: 0 0;
-  margin-top: 0;
+  margin-top: 1px;
   margin-left: auto;
   display: flex;
 }
@@ -209,7 +216,6 @@ img {
 .site-navigation .log-in:active,
 .site-navigation .log-in:focus {
   background-color: rgba(248, 247, 244, 1);
-  width: 93px;
   border-radius: 50px;
 }
 
@@ -225,13 +231,11 @@ img {
 .site-navigation .empty-cart:active,
 .site-navigation .empty-cart:focus {
   background-color: rgba(248, 247, 244, 1);
-  width: 93px;
   height: 32px;
   border-radius: 50px;
 }
 
 .main-container {
-  width: 1146px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -251,6 +255,7 @@ img {
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
+  min-width: 1250px;
 }
 
 .slider {
@@ -352,6 +357,7 @@ img {
 .promo-ad {
   width: 1146px;
   margin-top: 41px;
+  margin-left: 52px;
 }
 
 .promo-ad ul {
@@ -442,7 +448,7 @@ img {
 /*Стили для хитов продаж и карточки товара*/
 .hits-items {
   width: 1146px;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 37px;
 }
 
@@ -451,7 +457,7 @@ img {
   margin: 0px;
   padding: 0px;
   display: flex;
-  width: 1146px;
+  margin-left: 40px;
 }
 
 .icecream-item-list {
@@ -459,9 +465,12 @@ img {
 }
 
 .hits-icecream,
-.icecream-item-list li {
+.icecream-item {
   width: 267px;
-  margin-right: 26px;
+  /*margin-right: 26px;*/
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 5px;
 }
 
 .icecream-item-list li {
@@ -537,9 +546,6 @@ img {
 .icecream-catalog .icecream-item:focus {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgba(248, 247, 244, 0.2);
-  /* Прыгают объекты, но иначе прсыпется верстка*/
-  padding-left: 13px;
-  padding-right: 13px;
 }
 
 .hits-icecream a:hover,
@@ -566,15 +572,15 @@ img {
   width: 1146px;
   border-radius: 15px;
   margin-bottom: 40px;
+  margin-left: 50px;
 }
 
 .advantages .about-us {
   color: rgba(50, 50, 50, 1);
   font-size: 24px;
   line-height: 30px;
-  background-repeat: no-repeat;
   /*не получается достичь совпадаения по шрифту в макете*/
-  margin-left: 22px;
+  margin-left: 23px;
   margin-right: 110px;
   font-weight: 500;
   margin-bottom: 22px;
@@ -586,9 +592,10 @@ img {
   line-height: 22px;
   list-style-type: none;
   width: 476px;
-  padding-left: 75px;
+  padding-left: 77px;
   padding-bottom: 22px;
-  margin-right: 19px;
+  margin-right: 17px;
+  position: relative;
 }
 
 .advantages-items {
@@ -598,6 +605,44 @@ img {
   margin: 0 0;
   padding-bottom: 1px;
 }
+.icecream-icon::before{
+  content: "";
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/icecream-icon.svg");
+  position: absolute;
+  left: 20px;
+  top: -14px;
+}
+.cow-icon::before{
+  content: "";
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/cow-icon.svg");
+  position: absolute;
+  left: 20px;
+  top: -14px;
+}
+
+.leaf-icon::before{
+  content: "";
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/leaf-icon.svg");
+  position: absolute;
+  left: 20px;
+  top: -14px;
+}
+.termo-icon::before{
+  content: "";
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/termometr-icon.svg");
+  position: absolute;
+  left: 20px;
+  top: -14px;
+}
+
 
 /*Стили для блога*/
 .blog {
@@ -609,6 +654,7 @@ img {
   border-radius: 15px;
   width: 560px;
   margin-bottom: 40px;
+  margin-left: 52px;
 }
 
 .blog h2 {
@@ -616,7 +662,7 @@ img {
   font-size: 16px;
   font-weight: normal;
   line-height: 22px;
-  margin-top: 20px;
+  margin-top: 22px;
   padding-top: 0px;
 }
 
@@ -654,7 +700,7 @@ img {
   line-height: 22px;
   width: 560px;
   border-radius: 15px;
-  margin-left: 24px;
+  margin-left: 25px;
   margin-bottom: 40px;
   /*height: 100%;*/
 }
@@ -716,14 +762,24 @@ img {
   position: relative;
 }
 
+.main-map::after{
+  content: "";
+  width: 80px;
+  height: 140px;
+  position: absolute;
+  background-image: url("../img/pin.svg");
+  top:137px;
+  left: 265px;
+}
+
 .adress-tel-info {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 15px;
   width: 250px;
   margin-left: 870px;
-  margin-top: 64px;
+  margin-top: 63px;
   margin-bottom: 64px;
-  padding-left: 24px;
+  padding-left: 26px;
   padding-top: 28px;
   position: absolute;
   top: 0;
@@ -812,15 +868,6 @@ img {
   display: inline-block;
 }
 
-.links-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.links-list li {
-  width: 50%;
-  flex-grow: 1;
-}
 
 .social-links ul {
   margin: 0;
@@ -829,9 +876,61 @@ img {
 
 .social-links {
   width: 267px;
-  margin-top: 37px;
+  margin-top: 28px;
   margin-bottom: 30px;
 }
+
+.social-button-twitter a {
+   background-image: url("../img/twitter-icon.svg");
+   opacity: 0.8;
+   border-radius: 50%;
+   width:32px;
+   height:32px;
+   display:inline-block;
+   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+   margin-top: 5px;
+   margin-left: 5px;
+   margin-right: 7px;
+}
+.social-button-instagram a {
+   background-image: url("../img/instagram-icon.svg");
+   opacity: 0.8;
+   border-radius: 50%;
+   width:32px;
+   height:32px;
+   display:inline-block;
+   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+   margin-top: 5px;
+   margin-left: 5px;
+   margin-right: 7px;
+}
+
+.social-button-fb a {
+   background-image: url("../img/facebook-icon.svg");
+   opacity: 0.8;
+   border-radius: 50%;
+   width:32px;
+   height:32px;
+   display:inline-block;
+   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+   margin-top: 5px;
+   margin-left: 5px;
+   margin-right: 7px;
+}
+
+.social-button-vk a {
+   background-image: url("../img/vk-icon.svg");
+   opacity: 0.8;
+   border-radius: 50%;
+   width:32px;
+   height:32px;
+   display:inline-block;
+   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+   margin-top: 5px;
+   margin-left: 5px;
+   margin-right: 7px;
+}
+
 
 .footer-links ul {
   margin: 0;
@@ -839,16 +938,57 @@ img {
 }
 
 .footer-links {
-  width: 333px;
-  margin-left: 129px;
-  margin-top: 37px;
+  width: 400px;
+  margin-left: 126px;
+  margin-top: 28px;
   margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.links-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.links-list a {
+  display: inline-block;
+  padding-right: 0px;
+  margin-right: 14px;
+  margin-top: 2px;
+}
+
+
+.links-list li{
+    margin-right: 0px;
+    padding-right: 18px;
+}
+
+.links-list li:nth-child(3){
+  padding-right: 28px;
+}
+
+
+.for-provider{
+   position:relative;
+}
+
+
+.for-provider a::before{
+   content: "";
+   position: absolute;
+   background-repeat: no-repeat;
+   left: -23px;
+   background-image: url("../img/heart-icon.svg");
+   width:15px;
+   height:13px;
+   position:absolute;
+
 }
 
 .copyright {
-  width: 190px;
-  margin-left: 220px;
-  margin-top: 19px;
+  width: auto;
+  margin-left: 130px;
+  margin-top: 14px;
   margin-bottom: 25px;
 }
 
@@ -857,6 +997,8 @@ img {
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
+  margin-top: 3px;
+  padding-left: 2px;
 }
 
 .copyright a:not(.htmlacademy-logo) {
@@ -971,6 +1113,17 @@ img {
   background-color: rgba(248, 247, 244, 1);
   border-radius: 50px;
   font-weight: 500;
+}
+.breadcrumb{
+  align-self: center;
+  width: 224px;
+  padding-left: 50px;
+  margin-right: 710px;
+  margin-top: 10px;
+}
+.schedule-inner{
+  margin-left: auto;
+  margin-right: 52px;
 }
 
 .breadcrumb ul {
@@ -1215,14 +1368,11 @@ img {
   padding: 0 0;
 }
 
-.breadcrumb {
-  width: 224px;
-  margin-right: 923px;
-}
-
 .catalog-heading {
-  margin: 10px 762px 0 0;
+  margin-right: 762px;
   width: 384px;
+  margin-left: 50px;
+  margin-top: 0px;
 }
 
 .filter {
@@ -1232,7 +1382,7 @@ img {
 }
 
 .icecream-catalog {
-  width: 1146px;
+  width: auto;
   margin-bottom: 80px;
 }
 
@@ -1337,7 +1487,7 @@ img {
   top: 6px;
 }
 
-.catalog-menu .user-field {
+.user-field {
   margin-left: auto;
   align-self: center;
 }

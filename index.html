@@ -15,6 +15,7 @@
     <input class="visually-hidden" type="radio" id="product-2" name="toggle">
     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <div class="site-wrap">
+	<div class="site-container">
       <!-- Шапка сайта-->
       <header class="main-header">
         <nav class="site-navigation">
@@ -22,8 +23,8 @@
           <!--Меню сайта-->
           <ul class="site-menu">
             <li class="calatog-menu main-menu">
-              <div class="sub-menu-wrap">
                 <a href="catalog.html">Каталог</a>
+                <div class="sub-menu-wrap">
                 <ul class="sub-menu">
                 <!-- Выпадающее меню-->
                 <li><a href="#" class="new-items">Новинки</a></li>
@@ -53,8 +54,7 @@
           </p>
         </nav>
       </header>
-      <main>
-        <div class="main-container">
+      <main class="main-container">
           <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
           <!--Слайдер-->
           <section class="slider">
@@ -162,12 +162,12 @@
           <!-- Раздел "О магазине" и его достоинства-->
           <section class="advantages">
             <h2 class="visually-hidden">О магазине</h2>
-            <p class="about-us">Магазин Глэйси —  это онлайн-  и    офлайн-магазин   по продаже мороженого собственного производства на развес</p>
+            <p class="about-us">Магазин Глэйси —  это онлайн-и офлайн-магазин по продаже мороженого собственного производства на развес</p>
             <ul class="advantages-items">
-              <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-              <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-              <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-              <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+              <li class="icecream-icon">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="cow-icon">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+              <li class="leaf-icon">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+              <li class="termo-icon">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
             </ul>
           </section>
           <!--Элемент "Запись блога"-->
@@ -187,7 +187,6 @@
               <button type="submit" name="subscribtion" class="buttons">Отправить</button>
             </form>
           </section>
-        </div>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="main-map">
@@ -208,16 +207,16 @@
           <h3 class="visually-hidden">Ссылки на социальные сети</h3>
           <ul>
             <li class="social-button-twitter">
-              <a href="#">Twitter</a>
+              <a href="#"><span class="visually-hidden">Twitter</span></a>
             </li>
             <li class="social-button-instagram">
-              <a href="#">Instagram</a>
+              <a href="#"><span class="visually-hidden">Instagram</span></a>
             </li>
             <li class="social-button-fb">
-              <a href="#">Facebook</a>
+              <a href="#"><span class="visually-hidden">Facebook</span></a>
             </li>
             <li class="social-button-vk">
-              <a href="#">Вконтакте</a>
+              <a href="#"><span class="visually-hidden">Вконтакте</span></a>
             </li>
           </ul>
         </div>
@@ -225,7 +224,7 @@
         <div class="footer-links">
           <ul class="links-list">
             <li class="for-provider">
-              <a href="#">
+             <a href="#">
                 <b>Для поставщиков</b>
               </a>
             </li>
@@ -250,6 +249,7 @@
           </p>
         </div>
       </footer>
+</div>
       <!-- Всплывающее окно входа-->
       <div class="sing-in-form">
         <h3 class="visually-hidden">Вход в личный кабинет</h3>
