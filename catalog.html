@@ -21,7 +21,9 @@
           <a href="catalog.html">Каталог</a>
           <div class="sub-menu-wrap">
             <ul class="sub-menu">
+
             <!-- Выпадающее меню-->
+
             <li><a href="#" class="new-items">Новинки</a></li>
             <li class="current-menu-item"><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -35,7 +37,7 @@
       </ul>
       <div class="user-field">
         <p class="main-search">
-          <span class="visually-hidden"><a href="#">Поиск</a></span>
+          <a href="#"><span class="visually-hidden">Поиск</span></a>
         </p>
         <p class="log-in">
           <a href="#">Вход</a>
@@ -58,7 +60,9 @@
   </header>
   <main class="main-container">
     <h1 class="catalog-heading">Сливочное мороженое</h1>
+
     <!--Блок фильтрации-->
+
     <section class="filter">
       <h2 class="visually-hidden">Фильтры</h2>
       <form class="catalog-filter" action="index.html" method="get">
@@ -72,19 +76,29 @@
             </select>
           </label>
         </div>
+
         <div class="range-wrap">
+
           <label class="filter-type"> Цена: 100 руб. – 500 руб.
-            <input type="range" name="price-range" value="5" min="100" max="500">
+            <input type="range" name="price-range" value="5" min="100" max="500" class="visually-hidden">
           </label>
+
+	   <div class="range-filter">
+            <div class="scale">
+               <div class="rande-bar"></div>
+            </div>
+            <div class="range-controls range-control-min"></div>
+            <div class="range-controls range-control-max"></div>
+           </div>
         </div>
         <div class="fat-filter-wrap">
           <fieldset class="fat-content">
             <legend class="filter-type">Жирность:</legend>
             <ul>
-              <li><label><input type="radio" name="fat-content" value="0%"> 0% </label></li>
-              <li><label><input type="radio" name="fat-content" value="10%"> до 10% </label></li>
-              <li><label><input type="radio" name="fat-content" value="<30%">до 30%</label></li>
-              <li><label><input type="radio" name="fat-content" value=">30%">выше 30%</label></li>
+              <li><label><input type="radio" name="fat-content" value="0%" class="visually-hidden"> 0% </label></li>
+              <li><label><input type="radio" name="fat-content" value="10%" class="visually-hidden"> до 10% </label></li>
+              <li><label><input type="radio" name="fat-content" value="<30%" class="visually-hidden">до 30%</label></li>
+              <li><label><input type="radio" name="fat-content" value=">30%" class="visually-hidden">выше 30%</label></li>
             </ul>
           </fieldset>
         </div>
@@ -92,11 +106,11 @@
           <fieldset class="flavors-type">
             <legend class="filter-type">Наполнители:</legend>
             <ul>
-              <li><label><input type="checkbox" name="flavors" value="chocolate">шоколадные</label></li>
-              <li><label><input type="checkbox" name="flavors" value="sugar-powder">сахарные присыпки</label></li>
-              <li><label><input type="checkbox" name="flavors" value="fruit">фрукты</label></li>
-              <li><label><input type="checkbox" name="flavors" value="syrup">сиропы</label></li>
-              <li><label><input type="checkbox" name="flavors" value="jam">джемы</label></li>
+              <li><label><input type="checkbox" name="flavors" value="chocolate" class="visually-hidden">шоколадные</label></li>
+              <li><label><input type="checkbox" name="flavors" value="sugar-powder" class="visually-hidden">сахарные присыпки</label></li>
+              <li><label><input type="checkbox" name="flavors" value="fruit" class="visually-hidden">фрукты</label></li>
+              <li><label><input type="checkbox" name="flavors" value="syrup" class="visually-hidden">сиропы</label></li>
+              <li><label><input type="checkbox" name="flavors" value="jam" class="visually-hidden">джемы</label></li>
             </ul>
           </fieldset>
         </div>
@@ -117,7 +131,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden">Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn">Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -130,7 +144,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-кофейное с кусочками шоколада</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -143,7 +157,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-клубничное с присыпкой из белого шоколада</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -156,7 +170,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное крем-брюле с карамельной подливкой</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -169,7 +183,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с брусничным джемом</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -182,7 +196,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-черничное с цельными ягодами черники</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -195,7 +209,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-лимонное с карамельной присыпкой</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -208,7 +222,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с шоколадной стружкой</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -221,7 +235,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочно-ванильное с кусочками шоколада</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -234,7 +248,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочноe с ментоловым сиропом</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -247,7 +261,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с кусочками черного шоколада</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
         <!-- Блок одного товара-->
@@ -260,7 +274,7 @@
                 <a href="catalog.html" class="icecream-link">Сливочное с мятным сиропом</a>
               </figcaption>
             </figure>
-            <button type="button" name="quick-view" class="buttons visually-hidden" hidden>Быстрый просмотр</button>
+            <button type="button" name="quick-view" class="buttons hidden-btn" hidden>Быстрый просмотр</button>
           </div>
         </li>
       </ul>
@@ -273,7 +287,7 @@
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
         <li><a href="#">5</a> </li>
-        <li><a href="#">></a></li>
+        <li><a href="#"><span class="visually-hidden">Далее</span></a></li>
       </ul>
     </div>
   </main>
@@ -357,15 +371,15 @@
       <input type="email" name="login-email" value="" placeholder="Электронная почта">
       <input type="password" name="password" value="" placeholder="Пароль">
       <button type="submit" name="login-button" class="buttons">Войти</button>
+      <ul class="login-links">
+        <li>
+          <a href="#">Забыли пароль?</a>
+        </li>
+        <li>
+          <a href="#">Регистрация</a>
+        </li>
+      </ul>
     </form>
-    <ul class="login-links">
-      <li>
-        <a href="#">Забыли пароль?</a>
-      </li>
-      <li>
-        <a href="#">Регистрация</a>
-      </li>
-    </ul>
   </div>
   <!-- Форма поиска-->
   <div class="search-form">

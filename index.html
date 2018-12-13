@@ -40,7 +40,7 @@
           </ul>
           <div class="user-field">
             <p class="main-search">
-              <span class="visually-hidden"><a href="#">Поиск</a></span>
+              <a href="#"><span class="visually-hidden">Поиск</span></a>
             </p>
             <p class="log-in">
               <a href="#">Вход</a>
@@ -112,7 +112,7 @@
                       <a href="catalog.html" class="icecream-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                     </figcaption>
                   </figure>
-                  <button class="visually-hidden" type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+                  <button type="button" name="quick-view" class="buttons hidden-btn">Быстрый просмотр</button>
                 </div>
               </li>
               <!--Блок шоколадно-кофейного мороженого-->
@@ -126,7 +126,7 @@
                       <a href="catalog.html" class="icecream-link">Сливочно-кофейное с кусочками шоколада</a>
                     </figcaption>
                   </figure>
-                  <button class="visually-hidden" type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+                  <button type="button" name="quick-view" class="buttons hidden-btn">Быстрый просмотр</button>
                 </div>
               </li>
               <!--Блок клубничного мороженого-->
@@ -140,7 +140,7 @@
                       <a href="catalog.html" class="icecream-link">Сливочно-клубничное с присыпкой из белого шоколада</a>
                     </figcaption>
                   </figure>
-                  <button class="visually-hidden" type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+                  <button type="button" name="quick-view" class="buttons hidden-btn">Быстрый просмотр</button>
                 </div>
               </li>
               <!--Блок карамельного крем-брюле-->
@@ -154,7 +154,7 @@
                       <a href="catalog.html" class="icecream-link">Сливочное крем-брюле с карамельной подливкой</a>
                     </figcaption>
                   </figure>
-                  <button class="visually-hidden" type="button" name="quick-view" class="buttons">Быстрый просмотр</button>
+                  <button type="button" name="quick-view" class="buttons hidden-btn">Быстрый просмотр</button>
                 </div>
               </li>
             </ul>
@@ -257,15 +257,15 @@
           <input type="email" name="login-email" value="" placeholder="Электронная почта">
           <input type="password" name="password" value="" placeholder="Пароль">
           <button type="submit" name="login-button" class="buttons">Войти</button>
+          <ul class="login-links">
+            <li>
+              <a href="#">Забыли пароль?</a>
+            </li>
+            <li>
+              <a href="#">Регистрация</a>
+            </li>
+          </ul>
         </form>
-        <ul class="login-links">
-          <li>
-            <a href="#">Забыли пароль?</a>
-          </li>
-          <li>
-            <a href="#">Регистрация</a>
-          </li>
-        </ul>
       </div>
       <!-- Форма поиска-->
       <div class="search-form">
@@ -282,7 +282,7 @@
           <input type="email" name="custom-email" value="" placeholder="Ваша почта для ответа?">
           <textarea name="comments" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
           <button type="submit" name="feedback-send" class="feedback-send">Отправить</button>
-          <button type="button" name="close-button" class="buttons">Закрыть</button>
+          <button type="button" name="close-button" class="close-buttons">Закрыть</button>
         </form>
       </div>
   </div>
