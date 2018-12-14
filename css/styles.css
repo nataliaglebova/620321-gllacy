@@ -138,7 +138,7 @@ img {
 .sub-menu-wrap {
   visibility: hidden;
   position: absolute;
-  left: -40px;
+  left: 0px;
   top: 28px;
   z-index: 1;
   padding-top: 3px;
@@ -150,9 +150,10 @@ img {
   visibility: visible;
 }
 
-/*не срабатывают скругления у выпадающего меню*/
 .sub-menu {
+  overflow: hidden;
   border-radius: 5px;
+  padding-left: 0px;
 }
 
 .current-page {
@@ -165,7 +166,16 @@ img {
   background-color: rgba(208, 112, 88, 1);
   padding: 7px 13px 7px 14px;
   border-radius: 40px;
+  margin-right: 5px;
 }
+.current-page a::after{
+  display: none;
+}
+
+.current-page ul{
+  margin-top: 5px;
+}
+
 
 .user-field {
   width: auto;
@@ -221,32 +231,26 @@ img {
   margin-right: 10px;
 }
 
-.log-in a:active,
-.log-in a:hover {
-  color: rgba(50, 50, 50, 1);
-}
-
-.site-navigation .log-in:hover,
-.site-navigation .log-in:active,
-.site-navigation .log-in:focus {
-  background-color: rgba(248, 247, 244, 1);
-  color: rgb(50, 50, 50);
-}
-
 .empty-cart {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
 }
 
-.empty-cart a:active {
-  color: rgba(50, 50, 50, 1);
+.site-navigation .log-in:hover,
+.site-navigation .log-in:active,
+.site-navigation .log-in:focus,
+.empty-cart:active,
+.empty-cart:hover,
+.empty-cart:focus {
+  background-color: rgba(248, 247, 244, 1);
+  color: rgb(50, 50, 50);
 }
 
-.site-navigation .empty-cart:active,
-.site-navigation .empty-cart:focus {
-  background-color: rgba(248, 247, 244, 1);
-  height: 32px;
-  border-radius: 50px;
+.log-in a:active,
+.log-in a:hover,
+.empty-cart a:active,
+.empty-cart a:hover {
+  color: rgba(50, 50, 50, 1);
 }
 
 .main-container {
@@ -488,10 +492,7 @@ img {
   padding-top: 5px;
   padding-bottom: 15px;
   border-radius: 5px;
-}
-
-.icecream-item-list li {
-  margin-top: 40px;
+  margin-bottom: 17px;
 }
 
 .icecream-item-list li:nth-child(4n) {
@@ -704,7 +705,7 @@ img {
 /*Стили для блога*/
 .blog {
   /* Для случая, если не закрузится картинка*/
-  background-color: rgba(251, 197, 209, 1);
+  background-color: rgba(255, 255, 255, 1);
   background-image: url("../img/srawberry-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -821,13 +822,13 @@ img {
 
 .main-map::after {
   content: "";
-  width: 80px;
-  height: 140px;
+  width: 180px;
+  height: 218px;
   position: absolute;
-  background-image: url("../img/pin.svg");
+  background-image: url("../img/pin.png");
   top: 137px;
   left: 265px;
-  /*box-shadow: 5px 10px 5px 10px black;*/
+  background-repeat: no-repeat;
 }
 
 .adress-tel-info {
@@ -891,19 +892,33 @@ img {
   padding-right: 28px;
 }
 
-.buttons:hover {
+.buttons:hover,
+.sing-in-form button:hover,
+.order .buttons:hover,
+.ing-in-form button:hover,
+.feedback .feedback-send:hover
+{
   background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
-
+.buttons:focus,
+.sing-in-form button:focus,
+.order .buttons:focus,
+.ing-in-form button:focus,
+.feedback .feedback-send:focus,
 .buttons:focus {
   background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
 
-.buttons:active {
+.buttons:active,
+.sing-in-form button:active,
+.order .buttons:active,
+.ing-in-form button:active,
+.feedback .feedback-send:active,
+.buttons:active  {
   box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
   background-image:
     linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67)),
@@ -1101,7 +1116,7 @@ img {
 }
 
 .sing-in-form input:active,
-.sing-in-form input:focus {
+  {
   font-weight: bold;
 }
 
@@ -1149,7 +1164,6 @@ img {
 .search-form input {
   font-size: 14px;
   font-family: "Roboto", "Arial", sans-serif;
-  ;
   line-height: 24px;
   width: 310px;
   border-radius: 5px;
@@ -1166,13 +1180,13 @@ img {
 }
 
 .search-form input:active,
-.search-form input:focus,
 .feedback input:active,
+.search-form input:focus,
 .feedback input:focus {
   font-weight: bold;
 }
 
-.feedback form {
+.feedback-form {
   /*display: none;*/
   /*временно*/
   margin: 10px;
@@ -1182,6 +1196,20 @@ img {
   font-weight: bold;
   width: 478px;
   border-radius: 5px;
+  position: relative;
+}
+.close-button {
+ border: none;
+ background: none;
+ width: 30px;
+ height: 30px;
+ background-image:url("../img/cross-big.svg");
+ background-repeat: no-repeat;
+ position: absolute;
+ cursor: pointer;
+ top: 17px;
+right: 0px;
+left: 445px;
 }
 
 .feedback p {
@@ -1197,7 +1225,6 @@ img {
 .feedback input {
   font-size: 16px;
   font-family: "Roboto", "Arial", sans-serif;
-  ;
   line-height: 24px;
   width: 267px;
   border-radius: 5px;
@@ -1214,8 +1241,6 @@ img {
 
 .feedback textarea {
   font-size: 16px;
-  font-family: "Roboto", "Arial", sans-serif;
-  ;
   line-height: 24px;
   width: 427px;
   border-radius: 5px;
@@ -1245,6 +1270,7 @@ img {
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   padding: 10px 25px 10px 24px;
   margin-left: 315px;
+  margin-bottom: 24px;
 }
 
 /*стили меню каталога*/
@@ -1261,9 +1287,9 @@ img {
 .breadcrumb {
   align-self: center;
   width: 224px;
-  padding-left: 50px;
   margin-right: 710px;
-  margin-top: 10px;
+  padding-left: 54px;
+  margin-top: 13px;
 }
 
 .schedule-inner {
@@ -1308,13 +1334,14 @@ img {
   width: 384px;
   margin-left: 50px;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .filter {
-  width: 874px;
   margin-right: 267px;
   margin-top: 25px;
   margin-left: 50px;
+  margin-bottom: 26px;
 }
 
 .catalog-filter {
@@ -1335,6 +1362,8 @@ img {
 .sorting-wrap {
   width: 193px;
   display: inline-block;
+  margin-right: 14px;
+  position: relative;
 }
 
 .range-wrap {
@@ -1343,7 +1372,6 @@ img {
 }
 
 .fat-filter-wrap {
-  width: 412px;
   display: inline-block;
 }
 
@@ -1355,19 +1383,34 @@ img {
   background-color: rgba(248, 247, 244, 0.2);
   border: none;
   color: rgb(255, 255, 255);
-  padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 16px;
   margin-top: 5px;
   /*Поддерживается не всеми браузерами*/
   -webkit-appearance: listbox;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-left: 15px;
 }
-
+.sorting-wrap::after{
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  top: 35px;
+  left: 155px;
+}
+.sorting-wrap:hover::after{
+  background-image: url("../img/icon-down-dir-active.svg");
+}
 .catalog-filter .filter-type {
   font-size: 14px;
   line-height: 16px;
   color: rgba(255, 255, 255, 1);
   font-weight: 500;
+  display: inline-block;
+  margin-left: 17px;
 }
 
 .catalog-filter li {
@@ -1388,6 +1431,9 @@ img {
 }
 
 .filter .sorting:hover,
+
+/*не совсем поняла по стайлгайду черный только для сортировки или для других фильтров тоже?*/
+
 .filter input[type="range"]:hover,
 .fat-content li:hover,
 .flavors-type li:hover {
@@ -1402,10 +1448,15 @@ img {
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
-  padding: 10px 30px 10px 30px;
   border: 2px solid rgba(255, 255, 255, 1);
   align-self: center;
-  margin-top: 10px;
+  display: inline-block;
+  margin-left: 13px;
+  margin-top: 15px;
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom:8px;
+  padding-right:28px;
 }
 
 .catalog-filter button:hover,
@@ -1439,7 +1490,7 @@ img {
 .rande-bar {
   height: 2px;
   background-color: rgba(248, 247, 244, 1);
-  width: 80%;
+  width: 63%;
   margin-left: 15px;
 }
 
@@ -1454,38 +1505,61 @@ img {
 }
 
 .range-control-min {
-  left: 5px;
-  bottom: 5px;
+    left: 38px;
+    top: 6px;
 }
 
 .range-control-max {
-  left: 65%;
-  bottom: 5px;
+  left: 63%;
+  top: 6px;
+
+}
+.fat-content label:not([for="more-30%-content"]){
+margin-right:17px;
 }
 
 .fat-content label,
 .flavors-type label {
   padding-left: 30px;
   position: relative;
-}
+  }
 
 .fat-content label::before {
   content: "";
   width: 25px;
   height: 25px;
   position: absolute;
-  /*как сделать белым не вставляя картинку в код?*/
   background-image: url("../img/radio-off.svg");
+  opacity: 0.8;
   left: 0;
   top: -2px;
   background-repeat: no-repeat;
+}
+.fat-content label:hover::before,
+.flavors-type label:hover::before{
+    opacity: 1;
+}
+
+.fat-content label:disabled::before,
+.flavors-type label:disabled::before{
+    opacity: 0.4;
+  }
+.fat-content input[type="radio"]:checked + label::before{
+  background-image: url("../img/radio-on.svg");
 }
 
 .fat-content ul {
   padding-top: 10px;
   padding-right: 20px;
-  padding-left: 20px;
   padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.flavors-type{
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-top: 2px;
+  padding-right: 0px;
 }
 
 .flavors-type label::before {
@@ -1493,11 +1567,14 @@ img {
   width: 25px;
   height: 25px;
   position: absolute;
-  /*как сделать белым не вставляя картинку svg в html-код?*/
   background-image: url("../img/checkbox-off.svg");
+  opacity: 0.8;
   left: 0;
   top: -2px;
   background-repeat: no-repeat;
+}
+.flavors-type input[type="checkbox"]:checked + label::before{
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .flavors-type ul {
@@ -1505,14 +1582,18 @@ img {
   padding-bottom: 10px;
   padding-left: 20px;
 }
+.flavors-type label:not([for="jam-check"]){
+margin-right: 17px;
+}
 
 .icecream-catalog {
   width: auto;
-  margin-bottom: 80px;
+  margin-bottom: 43px;
 }
 
 .paginator {
-  margin-left: 955px;
+  margin-left: auto;
+  margin-right: 42px;
 }
 
 .paginator li {
@@ -1521,11 +1602,10 @@ img {
   margin-bottom: 30px;
   text-align: center;
   width: 18px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  height: 18px;
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
 }
 
 .paginator ul {
@@ -1561,10 +1641,15 @@ img {
 .paginator .current-page-number {
   color: rgba(50, 50, 50, 1);
   background-color: rgb(255, 255, 255);
+  font-weight: 500;
   border-radius: 100%;
   text-align: center;
   padding: 5px;
   height: auto;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
 .paginator ul::before {
@@ -1603,22 +1688,67 @@ img {
   background-color: rgba(248, 247, 245, 1);
   border-radius: 5px;
   width: 543px;
-  height: 243px;
+  padding-top: 20px;
+  padding-left: 16px;
+  padding-right: 14px;
 }
 
 .order a {
   color: inherit;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
 }
 
-.total td {
-  font-size: 13px;
+.small-item-img {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.order td:nth-child(3){
+  width: 225px;
+  padding-top: 10px;
+}
+
+.order td:nth-child(4){
+  padding-left: 14px;
+  vertical-align: top;
+  padding-top: 8px;
+}
+.order td:nth-child(5){
+  padding-left: 30px;
+  vertical-align: top;
+  padding-top: 8px;
+}
+
+.total td{
+  border-top: 1px solid #cacac7;
+  text-align: end;
+  padding-top: 17px;
+}
+.total-sum {
+  font-size: 15px;
   font-weight: bold;
   line-height: 18px;
-  border-top: 1px solid #cacac7;
 }
 
 .shopping-list .price-per-one {
   color: rgb(188, 188, 186);
+}
+.shopping-list{
+  margin-bottom: 17px;
+}
+.del-button{
+   border: none;
+   background: none;
+   width:11px;
+   height:11px;
+   background-image:url("../img/del-icon.svg");
+   background-repeat: no-repeat;
+   margin-right: 10px;
+   cursor: pointer;
+   display: block;
+   margin-bottom: 20px;
+
 }
 
 .order .buttons {
@@ -1631,6 +1761,10 @@ img {
   border-radius: 40px;
   text-align: center;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  margin-left: 355px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 .blog h3:hover,
@@ -1645,7 +1779,8 @@ img {
 .feedback-form input:focus,
 .search-form input:focus,
 .sing-in-form input:focus {
-  border: solid rgb(199, 198, 197) 2px;
+  box-shadow: 0 0 0px 1px rgb(199, 198, 197);
+
 }
 
 .feedback-form input:active,
@@ -1654,7 +1789,7 @@ img {
 .feedback-form input:focus,
 .search-form input:focus,
 .sing-in-form input:focus {
-  border: solid rgb(143, 189, 236) 2px;
+   box-shadow: 0 0 0px 1px rgb(143, 189, 236);
 }
 
 .sorting:hover {
@@ -1675,7 +1810,6 @@ img {
   overflow: hidden;
 }
 
-/*Стили для сеток*/
 .main-footer {
   display: flex;
   width: 1146px;
@@ -1684,9 +1818,9 @@ img {
 
 .catalog-footer {
   border-top: solid 1px rgba(255, 255, 255, 0.3);
+  padding-top: 5px;
 }
 
-/*микросетки и иконки*/
 .main-search {
   padding-right: 35px;
   position: relative;
@@ -1754,6 +1888,10 @@ img {
   left: 17px;
   top: 6px;
 }
+.empty-cart a:hover::before {
+  background-image: url("../img/full-cart-icon.svg");
+}
+
 
 .user-field {
   margin-left: auto;
