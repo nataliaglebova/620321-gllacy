@@ -20,11 +20,14 @@ img {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1250px;
   /*Ширину нужно установить как на макете*/
   margin: 0 auto;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-logo {
@@ -39,6 +42,8 @@ img {
 }
 
 .site-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -73,7 +78,8 @@ img {
 
 .site-menu a:not(.sub-menu>a):active {
   color: rgb(50, 50, 50);
-  box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+  -webkit-box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+          box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
   background-color: rgb(237, 237, 237);
   border-radius: 30px;
   padding: 5px 10px 5px 15px;
@@ -180,10 +186,14 @@ img {
 .user-field {
   width: auto;
   margin-right: 54px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 0;
   margin-top: 1px;
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -255,8 +265,11 @@ img {
 
 .main-container {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /*Стили слайдера*/
@@ -272,6 +285,8 @@ img {
   background-image: url("../img/icecream-cones-1.png");
   background-repeat: no-repeat;
   background-position: top center;
+  -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
+  -o-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
   min-width: 1250px;
 }
@@ -308,9 +323,13 @@ img {
   vertical-align: top;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+          box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
   cursor: pointer;
 }
@@ -384,6 +403,8 @@ img {
 }
 
 .promo-ad-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1146px;
   list-style: none
@@ -402,8 +423,11 @@ img {
 
 .promo-raspberry,
 .promo-chocolate {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .promo-raspberry .buttons,
@@ -442,11 +466,17 @@ img {
   font-weight: bold;
   line-height: 24px;
   background-image:
+    -webkit-gradient(linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image:
+    -webkit-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
+    -o-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border-radius: 40px;
   text-align: center;
-  margin-left: 375px width:auto;
   padding-left: 22px;
   padding-right: 22px;
   margin-top: 24px;
@@ -474,13 +504,16 @@ img {
 .icecream-item-list {
   margin: 0px;
   padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 40px;
 }
 
 .icecream-item-list {
   width: 1250px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .hits-icecream,
@@ -564,15 +597,18 @@ img {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   line-height: 24px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image: -webkit-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image: -o-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
   background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   padding-left: 17px;
   padding-right: 17px;
   margin: 17px auto;
 }
-
 
 /*.hits-items .hits-icecream:hover,
 .icecream-catalog .icecream-item:hover,
@@ -587,8 +623,6 @@ img {
 .icecream-item:focus .hidden-btn {
   display: block;
 }*/
-
-
 .icecream-item:hover .item-card,
 .icecream-item:hover .hidden-btn,
 .hits-icecream:hover .item-card,
@@ -664,8 +698,11 @@ img {
 }
 
 .advantages-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 0;
   margin: 0 0;
   padding-bottom: 1px;
@@ -791,8 +828,15 @@ img {
   font-weight: bold;
   line-height: 24px;
   background-image:
+    -webkit-gradient(linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image:
+    -webkit-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
+    -o-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border-radius: 40px;
   text-align: center;
   padding-bottom: 10px;
@@ -819,6 +863,8 @@ img {
 
 /*Стили для блока адреса и карты*/
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -892,10 +938,17 @@ img {
   font-weight: bold;
   line-height: 24px;
   background-image:
+    -webkit-gradient(linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image:
+    -webkit-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
+    -o-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   margin-top: 26px;
   margin-bottom: 29px;
   padding-left: 27px;
@@ -908,6 +961,15 @@ img {
 .ing-in-form button:hover,
 .feedback .feedback-send:hover {
   background-image:
+    -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))),
+    -webkit-gradient(linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image:
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    -webkit-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
+    -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    -o-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
@@ -919,6 +981,15 @@ img {
 .feedback .feedback-send:focus,
 .buttons:focus {
   background-image:
+    -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))),
+    -webkit-gradient(linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image:
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    -webkit-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
+    -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    -o-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
@@ -929,7 +1000,17 @@ img {
 .ing-in-form button:active,
 .feedback .feedback-send:active,
 .buttons:active {
-  box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
+  -webkit-box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
+          box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
+  background-image:
+    -webkit-gradient(linear, left top, left bottom, from(rgb(231, 74, 53)), to(rgb(242, 104, 67))),
+    -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.07)), to(rgba(0, 0, 0, 0.07)));
+  background-image:
+    -webkit-linear-gradient(top, rgb(231, 74, 53), rgb(242, 104, 67)),
+    -webkit-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  background-image:
+    -o-linear-gradient(top, rgb(231, 74, 53), rgb(242, 104, 67)),
+    -o-linear-gradient(top, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
   background-image:
     linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67)),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
@@ -968,7 +1049,8 @@ img {
 
 .social-links a:active,
 .social-links a:focus {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
 }
 
 .social-button-twitter a {
@@ -978,7 +1060,8 @@ img {
   width: 32px;
   height: 32px;
   display: inline-block;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 7px;
@@ -991,7 +1074,8 @@ img {
   width: 32px;
   height: 32px;
   display: inline-block;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 7px;
@@ -1004,7 +1088,8 @@ img {
   width: 32px;
   height: 32px;
   display: inline-block;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 7px;
@@ -1017,7 +1102,8 @@ img {
   width: 32px;
   height: 32px;
   display: inline-block;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 7px;
@@ -1037,8 +1123,11 @@ img {
 }
 
 .links-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .links-list a {
@@ -1103,7 +1192,8 @@ img {
   background-color: rgba(248, 247, 244, 1);
   width: 276px;
   height: 215px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   position: absolute;
   top: 60px;
@@ -1112,10 +1202,6 @@ img {
   z-index: 100;
 }
 
-/*не срабатывет*/
-/*.log-in:hover ~ .sing-in-form{
-  display: block;*/
-}
 .sing-in-form input {
   font-size: 14px;
   line-height: 24px;
@@ -1128,7 +1214,8 @@ img {
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 8px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .sing-in-form input:active {
@@ -1143,10 +1230,14 @@ img {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   line-height: 24px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image: -webkit-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image: -o-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
   background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   padding: 10px 25px 10px 24px;
   margin-top: 20px;
   margin-left: 20px;
@@ -1171,7 +1262,8 @@ img {
   background-color: rgba(248, 247, 244, 1);
   width: 344px;
   height: 84px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   font-weight: bold;
   position: absolute;
@@ -1194,7 +1286,8 @@ img {
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .search-form input:active,
@@ -1203,13 +1296,15 @@ img {
 .feedback input:focus {
   font-weight: bold;
 }
-.feedback{
+
+.feedback {
   display: none;
   position: fixed;
   top: 318px;
   left: 715px;
   z-index: 30;
 }
+
 .feedback-form {
   background-color: rgba(248, 247, 244, 1);
   font-family: "Roboto", "Arial", sans-serif;
@@ -1257,7 +1352,8 @@ img {
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .feedback textarea {
@@ -1275,7 +1371,8 @@ img {
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .feedback .feedback-send {
@@ -1286,10 +1383,17 @@ img {
   font-weight: bold;
   line-height: 24px;
   background-image:
+    -webkit-gradient(linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+  background-image:
+    -webkit-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
+    -o-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
+  background-image:
     linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   border-radius: 40px;
   text-align: center;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   padding: 10px 25px 10px 24px;
   margin-left: 315px;
   margin-bottom: 24px;
@@ -1307,7 +1411,9 @@ img {
 }
 
 .breadcrumb {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 224px;
   margin-right: 710px;
   padding-left: 54px;
@@ -1367,8 +1473,11 @@ img {
 }
 
 .catalog-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: auto;
 }
 
@@ -1405,6 +1514,10 @@ img {
   margin-top: 5px;
 }
 
+.sorting::-ms-expand {
+  display: none;
+}
+
 .sorting {
   background-color: rgba(248, 247, 244, 0.2);
   border: none;
@@ -1413,23 +1526,27 @@ img {
   margin-top: 5px;
   /*Поддерживается не всеми браузерами*/
   -webkit-appearance: listbox;
-  padding-right: 12px;
+  padding-right: 17px;
   padding-top: 5px;
   padding-left: 15px;
 }
 
-.sorting-wrap::after {
+.sorting-style {
+  position: relative;
+}
+
+.sorting-style::after {
   content: "";
   position: absolute;
   width: 11px;
   height: 11px;
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
-  top: 35px;
+  top: 17px;
   left: 168px;
 }
 
-.sorting-wrap:hover::after {
+.sorting-style:hover::after {
   background-image: url("../img/icon-down-dir-active.svg");
 }
 
@@ -1476,7 +1593,9 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   border: 2px solid rgba(255, 255, 255, 1);
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   display: inline-block;
   margin-left: 13px;
   padding-left: 30px;
@@ -1484,7 +1603,6 @@ img {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-top: 16px;
-
 }
 
 .catalog-filter button:hover,
@@ -1495,7 +1613,8 @@ img {
 
 .catalog-filter button:active {
   color: rgb(50, 50, 50);
-  box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+  -webkit-box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+          box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
   background-color: rgb(237, 237, 237);
 }
 
@@ -1552,7 +1671,7 @@ img {
   position: relative;
 }
 
-.fat-content label{
+.fat-content label {
   padding-left: 20px;
 }
 
@@ -1583,9 +1702,12 @@ img {
 }
 
 .fat-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 410px;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1704,7 +1826,9 @@ img {
   position: absolute;
   left: 0px;
   top: 3px;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .paginator li:last-of-type {
@@ -1719,7 +1843,7 @@ img {
   background-repeat: no-repeat;
   position: absolute;
   left: 10px;
-top: 8px;
+  top: 8px;
 }
 
 .order {
@@ -1736,8 +1860,8 @@ top: 8px;
   left: 983px;
 }
 
-.order td{
-  padding:0;
+.order td {
+  padding: 0;
 }
 
 .order a {
@@ -1746,7 +1870,6 @@ top: 8px;
   margin-bottom: 5px;
   padding-bottom: 10px;
 }
-
 
 .small-item-img {
   margin-bottom: 10px;
@@ -1787,7 +1910,7 @@ top: 8px;
 }
 
 .shopping-list {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .del-button {
@@ -1809,14 +1932,20 @@ top: 8px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   line-height: 24px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
+  background-image: -webkit-linear-gradient(bottom, #e74a35, #f26843);
+  background-image: -o-linear-gradient(bottom, #e74a35, #f26843);
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border-radius: 40px;
   text-align: center;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-  margin-left: 355px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 10px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 340px;
 }
 
 .blog h3:hover,
@@ -1831,7 +1960,8 @@ top: 8px;
 .feedback-form input:focus,
 .search-form input:focus,
 .sing-in-form input:focus {
-  box-shadow: 0 0 0px 1px rgb(199, 198, 197);
+  -webkit-box-shadow: 0 0 0px 1px rgb(199, 198, 197);
+          box-shadow: 0 0 0px 1px rgb(199, 198, 197);
 }
 
 .feedback-form input:active,
@@ -1840,7 +1970,8 @@ top: 8px;
 .feedback-form input:focus,
 .search-form input:focus,
 .sing-in-form input:focus {
-  box-shadow: 0 0 0px 1px rgb(143, 189, 236);
+  -webkit-box-shadow: 0 0 0px 1px rgb(143, 189, 236);
+          box-shadow: 0 0 0px 1px rgb(143, 189, 236);
 }
 
 .sorting:hover {
@@ -1856,12 +1987,15 @@ top: 8px;
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1146px;
   margin: 0 auto;
@@ -1947,7 +2081,9 @@ top: 8px;
 
 .user-field {
   margin-left: auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .full-cart p {
@@ -1979,23 +2115,26 @@ top: 8px;
 }
 
 /*стили карточки товара*/
-
 .item-card {
   position: absolute;
   width: 294px;
   padding-top: 337px;
   top: 0px;
   left: 0px;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 5px;
   display: none;
 }
-
 
 .item-card .hidden-btn {
   display: none;
   margin-top: 0px;
   margin-left: 48px;
   margin-bottom: 20px;
+}
+
+.modal-show {
+  display: block;
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Магазин мороженого "Глейси"</title>
 </head>
@@ -21,9 +21,7 @@
             <a href="catalog.html">Каталог</a>
             <div class="sub-menu-wrap">
               <ul class="sub-menu">
-
                 <!-- Выпадающее меню-->
-
                 <li><a href="#" class="new-items">Новинки</a></li>
                 <li class="current-menu-item"><a href="#">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
@@ -60,24 +58,22 @@
     </header>
     <main class="main-container">
       <h1 class="catalog-heading">Сливочное мороженое</h1>
-
       <!--Блок фильтрации-->
-
       <section class="filter">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="catalog-filter" action="index.html" method="get">
           <div class="sorting-wrap">
             <label class="filter-type" for="sorting">Сортировка:</label>
-            <select class="sorting" name="sorting" id="sorting">
-              <option value="popular">по популярности</option>
-              <option value="cheaper">сначала недорогие</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="fat-content">по жирности</option>
-            </select>
+            <div class="sorting-style">
+              <select class="sorting" name="sorting" id="sorting">
+                <option value="popular">по популярности</option>
+                <option value="cheaper">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat-content">по жирности</option>
+              </select>
+            </div>
           </div>
-
           <div class="range-wrap">
-
             <label class="filter-type" for="price-range"> Цена: 100 руб. – 500 руб.</label>
             <input type="range" name="price-range" value="5" min="100" max="500" id="price-range" class="visually-hidden">
             <div class="range-filter">
@@ -431,11 +427,13 @@
   </div>
   <!-- Форма поиска-->
   <div class="search-form">
-    <form class="search-form" action="index.html" method="post">
+    <form action="index.html" method="post">
       <input type="search" name="search-text" value="" placeholder="Что ищем?">
       <button type="submit" name="start-search" class="visually-hidden">Поиск</button>
     </form>
   </div>
+  <script src="js/script.js">
+  </script>
 </body>
 
 </html>

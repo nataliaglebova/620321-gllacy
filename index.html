@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Магазин мороженого "Глейси"</title>
 </head>
@@ -204,7 +204,7 @@
               <b class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
               <p class="call-order">Для заказов по телефону:<br>
                 <b class="tel">8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
-              <a href="#" class="buttons">Форма обратной связи</a>
+              <a href="#" class="buttons feedback-btn">Форма обратной связи</a>
             </div>
           </div>
         </section>
@@ -277,7 +277,7 @@
     </div>
     <!-- Форма поиска-->
     <div class="search-form">
-      <form class="search-form" action="index.html" method="post">
+      <form action="index.html" method="post">
         <input type="search" name="search-text" value="" placeholder="Что ищем?">
         <button type="submit" name="start-search" class="visually-hidden">Поиск</button>
       </form>
@@ -288,12 +288,14 @@
         <p><b>Мы обязательно вам ответим!</b></p>
         <input type="text" name="custom-name" value="" placeholder="Как вас зовут?">
         <input type="email" name="custom-email" value="" placeholder="Ваша почта для ответа?">
-        <textarea name="comments" rows="8" cols="80" placeholder="Напишите что-нибудь..." rows="5"></textarea>
+        <textarea name="comments" rows="5" cols="80" placeholder="Напишите что-нибудь..."></textarea>
         <button type="submit" name="feedback-send" class="feedback-send">Отправить</button>
         <button type="button" name="close-button" class="close-button"><span class="visually-hidden">Закрыть</span></button>
       </form>
     </div>
   </div>
+  <script src="js/script.js">
+  </script>
 </body>
 
 </html>
