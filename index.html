@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles-min.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Магазин мороженого "Глейси"</title>
 </head>
@@ -18,7 +18,7 @@
     <div class="site-container">
       <!-- Шапка сайта-->
       <header class="main-header">
-        <nav class="site-navigation">
+        <nav class="site-navigation" aria-label="Навигация по сайту">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси Шоп" class="main-logo">
           <!--Меню сайта-->
           <ul class="site-menu">
@@ -38,18 +38,45 @@
             <li class="main-menu"><a href="delivery.html">Доставка и оплата</a></li>
             <li class="main-menu"><a href="about.html">О Компании</a></li>
           </ul>
-          <div class="user-field">
-            <p class="main-search">
+          <div class="user-field" aria-label="Блок навигации пользователя">
+            <div class="search-wrap">
+              <p class="main-search">
               <a href="#"><span class="visually-hidden">Поиск</span></a>
+              <div class="search-form">
+                <form action="index.html" method="post">
+                  <input type="search" name="search-text" value="" placeholder="Что ищем?">
+                  <button type="submit" name="start-search" class="visually-hidden">Поиск</button>
+                </form>
+              </div>
             </p>
+          </div>
+          <div class="log-in-wrap">
             <p class="log-in">
               <a href="#">Вход</a>
+              <!-- Всплывающее окно входа-->
+              <div class="sing-in-form">
+                <h3 class="visually-hidden">Вход в личный кабинет</h3>
+                <form class="" action="index.html" method="post">
+                  <input type="email" name="login-email" value="" placeholder="Электронная почта">
+                  <input type="password" name="password" value="" placeholder="Пароль">
+                  <button type="submit" name="login-button" class="buttons">Войти</button>
+                  <ul class="login-links">
+                    <li>
+                      <a href="#">Забыли пароль?</a>
+                    </li>
+                    <li>
+                      <a href="#">Новая регистрация</a>
+                    </li>
+                  </ul>
+                </form>
+              </div>
             </p>
+          </div>
             <p class="empty-cart" aria-label="Корзина">
               <a href="#">Пусто</a>
             </p>
           </div>
-          <p class="schedule">С 10 до 20, ежедневно
+          <p class="schedule" aria-label="Расписание работы магазина">С 10 до 20, ежедневно
             <span class="header-tel">8 812 450-25-25</span>
           </p>
         </nav>
@@ -57,7 +84,7 @@
       <main class="main-container">
         <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
         <!--Слайдер-->
-        <section class="slider">
+        <section class="slider" aria-label="Слайдер товаров магазина">
           <h2 hidden>Галлерея мороженого</h2>
           <div class="slider-controls">
             <label for="product-1">Первый</label>
@@ -82,14 +109,14 @@
         <section class="promo-ad">
           <h2 class="visually-hidden">Промо-акции</h2>
           <ul class="promo-ad-wrapper">
-            <li class="promo-wrapper">
+            <li>
               <div class="promo-raspberry">
                 <h3>Малинка даром!</h3>
                 <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                 <a href="catalog.html" class="buttons">Хочу варенье!</a>
               </div>
             </li>
-            <li class="promo-wrapper">
+            <li>
               <div class="promo-chocolate">
                 <h3>Шоколадки даром!</h3>
                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
@@ -198,18 +225,21 @@
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="main-map">
-            <img src="img/map.jpg" alt="Карта, адрес магазина ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBRIr0hOOD" width="1200" height="430" frameborder="0" allowfullscreen="true" aria-label="Карта, адрес магазина ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
             <div class="adress-tel-info">
               <p>Адрес главного офиса и офлайн-магазина:</p>
               <b class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-              <p class="call-order">Для заказов по телефону:<br>
-                <b class="tel">8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
+              <p class="call-order">Для заказов по телефону:
+                <div class="call-order">
+                  <b class="tel-number">8 812 450-25-25</b>
+                </div>
+                  (с 10 до 20 ежедневно)</p>
               <a href="#" class="buttons feedback-btn">Форма обратной связи</a>
             </div>
           </div>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer" aria-label="Подвал сайта">
         <!-- Ссылки на соц. сети-->
         <div class="social-links">
           <h3 class="visually-hidden">Ссылки на социальные сети</h3>
@@ -258,30 +288,6 @@
         </div>
       </footer>
     </div>
-    <!-- Всплывающее окно входа-->
-    <div class="sing-in-form">
-      <h3 class="visually-hidden">Вход в личный кабинет</h3>
-      <form class="" action="index.html" method="post">
-        <input type="email" name="login-email" value="" placeholder="Электронная почта">
-        <input type="password" name="password" value="" placeholder="Пароль">
-        <button type="submit" name="login-button" class="buttons">Войти</button>
-        <ul class="login-links">
-          <li>
-            <a href="#">Забыли пароль?</a>
-          </li>
-          <li>
-            <a href="#">Новая регистрация</a>
-          </li>
-        </ul>
-      </form>
-    </div>
-    <!-- Форма поиска-->
-    <div class="search-form">
-      <form action="index.html" method="post">
-        <input type="search" name="search-text" value="" placeholder="Что ищем?">
-        <button type="submit" name="start-search" class="visually-hidden">Поиск</button>
-      </form>
-    </div>
     <!-- Форма обратной связи-->
     <div class="feedback">
       <form class="feedback-form" action="index.html" method="post">
@@ -294,8 +300,8 @@
       </form>
     </div>
   </div>
-  <script src="js/script.js">
-  </script>
+  <!--<script src="js/script.js">
+  </script>-->
 </body>
 
 </html>

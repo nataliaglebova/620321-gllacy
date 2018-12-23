@@ -13,25 +13,23 @@ img {
 }
 
 .site-container {
-  width: 1250px;
+  width: 1200px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 .site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1250px;
-  /*Ширину нужно установить как на макете*/
+  width: 1200px;
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .main-logo {
-  margin-left: 52px;
+  margin-left: 26px;
   width: 154px;
   margin-top: 10px;
 }
@@ -53,6 +51,7 @@ img {
 
 .site-menu a {
   display: inline-block;
+  vertical-align: top;
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   font-weight: bold;
@@ -73,6 +72,7 @@ img {
 
 .site-menu li {
   display: inline-block;
+  vertical-align: top;
   padding-left: 5px;
 }
 
@@ -115,10 +115,11 @@ img {
   font-weight: normal;
   line-height: 16px;
   border: none;
+  display: inline-block;
+  vertical-align: top;
   padding-left: 20px;
   padding-top: 13px;
   padding-bottom: 15px;
-  display: inline-block;
 }
 
 .sub-menu .new-items {
@@ -185,7 +186,7 @@ img {
 
 .user-field {
   width: auto;
-  margin-right: 54px;
+  margin-right: 28px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -201,13 +202,12 @@ img {
   margin-right: 50px;
 }
 
-/* для удобства понимания расположения пунктов меню*/
 .user-field p {
   display: inline-block;
+  vertical-align: top;
 }
 
 .schedule {
-  margin-left: 1032px;
   width: 168px;
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
@@ -216,6 +216,7 @@ img {
   text-align: right;
   margin-bottom: 0px;
   margin-top: 0;
+  margin-left: 1006px;
 }
 
 .schedule span {
@@ -246,18 +247,18 @@ img {
   border-radius: 50px;
 }
 
-.site-navigation .log-in:hover,
-.site-navigation .log-in:active,
-.site-navigation .log-in:focus,
+.log-in-wrap:hover .log-in,
+.log-in-wrap:active .log-in,
+.log-in-wrap:focus .log-in,
 .empty-cart:active,
 .empty-cart:hover,
 .empty-cart:focus {
   background-color: rgba(248, 247, 244, 1);
-  color: rgb(50, 50, 50);
 }
 
-.log-in a:active,
-.log-in a:hover,
+.log-in-wrap:hover a,
+.log-in-wrap:active a,
+.log-in-wrap:focus a,
 .empty-cart a:active,
 .empty-cart a:hover {
   color: rgba(50, 50, 50, 1);
@@ -288,7 +289,7 @@ img {
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   -o-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
-  min-width: 1250px;
+  min-width: 1200px;
 }
 
 .slider {
@@ -312,15 +313,11 @@ img {
 }
 
 .buttons {
-  display: inline-block;
-  padding: 10px 40px;
-  padding-bottom: 12px;
   font-weight: 600;
   font-size: 32px;
   line-height: 41px;
   text-align: center;
   color: #ffffff;
-  vertical-align: top;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
   background: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
@@ -332,6 +329,10 @@ img {
           box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 40px;
+  padding-bottom: 12px;
 }
 
 .slider .buttons {
@@ -340,10 +341,10 @@ img {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
-  vertical-align: top;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -393,8 +394,8 @@ img {
 /* Стили блока с рекламными акциями */
 .promo-ad {
   width: 1146px;
-  margin-top: 41px;
-  margin-left: 52px;
+  margin-top: 31px;
+  margin-left: 26px;
 }
 
 .promo-ad ul {
@@ -406,8 +407,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   width: 1146px;
   list-style: none
+}
+.promo-ad-wrapper li{
+margin-top: 10px;
 }
 
 .promo-raspberry,
@@ -441,7 +446,8 @@ img {
   padding-left: 22px;
 }
 
-.promo-chocolate p, .promo-raspberry p {
+.promo-chocolate p,
+.promo-raspberry p {
   margin-left: 20px;
   margin-top: 14px;
   margin-right: 25px;
@@ -495,7 +501,7 @@ img {
 
 /*Стили для хитов продаж и карточки товара*/
 .hits-items {
-  width: 1146px;
+  width: 1200px;
   margin-top: 35px;
   margin-bottom: 5px;
 }
@@ -507,11 +513,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 40px;
+  flex-wrap: wrap;
+  margin-left: 12px;
 }
-
 .icecream-item-list {
-  width: 1250px;
+  margin-left: 0px;
+}
+.icecream-item-list {
+  width: 1200px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -533,7 +542,8 @@ img {
   margin-right: 0px;
 }
 
-.hits-icecream figure, .icecream-item-list figure {
+.hits-icecream figure,
+.icecream-item-list figure {
   margin: 0 0;
   padding: 0 0;
   position: relative;
@@ -610,19 +620,7 @@ img {
   margin: 17px auto;
 }
 
-/*.hits-items .hits-icecream:hover,
-.icecream-catalog .icecream-item:hover,
-.hits-items .hits-icecream:focus,
-.icecream-catalog .icecream-item:focus {
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  background-color: rgba(248, 247, 244, 0.2);
-}*/
-/*.hits-icecream:hover .hidden-btn,
-.icecream-item:hover .hidden-btn,
-.hits-icecream:focus .hidden-btn,
-.icecream-item:focus .hidden-btn {
-  display: block;
-}*/
+
 .icecream-item:hover .item-card,
 .icecream-item:hover .hidden-btn,
 .hits-icecream:hover .item-card,
@@ -667,10 +665,10 @@ img {
   /* Для случая, если не загрузится картинка*/
   background-color: rgba(235, 223, 195, 1);
   background-image: url("../img/waffle-background.jpg");
-  width: 1146px;
+  width: 1148px;
   border-radius: 15px;
   margin-bottom: 40px;
-  margin-left: 50px;
+  margin-left: 26px;
   margin-top: 3px;
 }
 
@@ -693,7 +691,7 @@ img {
   width: 476px;
   padding-left: 77px;
   padding-bottom: 22px;
-  margin-right: 17px;
+  margin-right: 15px;
   position: relative;
 }
 
@@ -758,7 +756,8 @@ img {
   border-radius: 15px;
   width: 560px;
   margin-bottom: 40px;
-  margin-left: 52px;
+  margin-left: 26px;
+  margin-right: 2px;
 }
 
 .blog h2 {
@@ -806,7 +805,6 @@ img {
   border-radius: 15px;
   margin-left: 25px;
   margin-bottom: 40px;
-  /*height: 100%;*/
 }
 
 .mailing p {
@@ -860,7 +858,10 @@ img {
   padding-bottom: 0px;
   padding-top: 0px;
 }
+.mailing-form input:hover{
 
+
+}
 /*Стили для блока адреса и карты*/
 .contacts {
   display: -webkit-box;
@@ -872,7 +873,10 @@ img {
 
 .main-map {
   width: 1200px;
+  min-height: 430px;
   position: relative;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
 
 .main-map::after {
@@ -881,8 +885,8 @@ img {
   height: 218px;
   position: absolute;
   background-image: url("../img/pin.png");
-  top: 137px;
-  left: 265px;
+  top: 125px;
+  left: 270px;
   background-repeat: no-repeat;
 }
 
@@ -926,9 +930,10 @@ img {
 .adress {
   margin-bottom: 20px;
   display: inline-block;
+  vertical-align: top;
 }
 
-.adress-tel-info .tel {
+.adress-tel-info .tel-number {
   margin-bottom: 30px;
 }
 
@@ -1030,6 +1035,7 @@ img {
 
 .social-links li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .social-links ul {
@@ -1060,6 +1066,7 @@ img {
   width: 32px;
   height: 32px;
   display: inline-block;
+  vertical-align: top;
   -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
           box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
   margin-top: 5px;
@@ -1074,6 +1081,7 @@ img {
   width: 32px;
   height: 32px;
   display: inline-block;
+  vertical-align: top;
   -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
           box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
   margin-top: 5px;
@@ -1088,6 +1096,7 @@ img {
   width: 32px;
   height: 32px;
   display: inline-block;
+  vertical-align: top;
   -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
           box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
   margin-top: 5px;
@@ -1102,6 +1111,7 @@ img {
   width: 32px;
   height: 32px;
   display: inline-block;
+  vertical-align: top;
   -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
           box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
   margin-top: 5px;
@@ -1117,7 +1127,7 @@ img {
 .footer-links {
   width: 400px;
   margin-left: 126px;
-  margin-top: 25px;
+  margin-top: 27px;
   margin-bottom: 30px;
   padding-left: 30px;
 }
@@ -1132,6 +1142,7 @@ img {
 
 .links-list a {
   display: inline-block;
+  vertical-align: top;
   padding-right: 0px;
   margin-right: 14px;
   margin-top: 2px;
@@ -1218,12 +1229,42 @@ img {
           box-sizing: border-box;
 }
 
-.sing-in-form input:active {
+.sing-in-form input,
+.search-form input,
+.feedback-form input,
+.mailing-form input,
+.feedback-form textarea{
   font-weight: bold;
 }
 
+/*стили для placeholder*/
+.sing-in-form input::-webkit-input-placeholder,
+.search-form input::-webkit-input-placeholder,
+.feedback-form input::-webkit-input-placeholder,
+.mailing-form input::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder {
+    font-weight: normal;}
+.sing-in-form input:-ms-input-placeholder,
+.search-form input:-ms-input-placeholder,
+.feedback-form input:-ms-input-placeholder,
+.mailing-form input:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder {
+    font-weight: normal;}
+.sing-in-form input::-ms-input-placeholder,
+.search-form input::-ms-input-placeholder,
+.feedback-form input::-ms-input-placeholder,
+.mailing-form input::-ms-input-placeholder,
+.feedback-form textarea::-ms-input-placeholder {
+    font-weight: normal;}
+.sing-in-form input::placeholder,
+.search-form input::placeholder,
+.feedback-form input::placeholder,
+.mailing-form input::placeholder,
+.feedback-form textarea::placeholder {
+    font-weight: normal;}
+
+
 .sing-in-form .buttons {
-  display: inline-block;
   color: rgba(255, 255, 255, 1);
   border: none;
   font-size: 18px;
@@ -1238,6 +1279,8 @@ img {
   text-align: center;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
           box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  display: inline-block;
+  vertical-align: top;
   padding: 10px 25px 10px 24px;
   margin-top: 20px;
   margin-left: 20px;
@@ -1246,6 +1289,7 @@ img {
 .sing-in-form .login-links {
   list-style-type: none;
   display: inline-block;
+  vertical-align: top;
   padding-left: 20px;
 }
 
@@ -1256,7 +1300,16 @@ img {
   font-weight: normal;
   border-bottom: solid rgba(50, 50, 50, 1) 1px;
 }
+.log-in-wrap:hover .sing-in-form{
+  display: block;
+}
 
+
+.search-wrap{
+  /*чтобы форма поиска не пропадала сразу после перевода мыши с лупы*/
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+}
 .search-form {
   display: none;
   background-color: rgba(248, 247, 244, 1);
@@ -1270,6 +1323,13 @@ img {
   top: 58px;
   left: 972px;
 }
+.search-wrap:hover .search-form,
+.search-wrap:focus .search-form,
+.search-wrap:active .search-form{
+  display: block;
+  z-index: 100;
+}
+
 
 .search-form input {
   font-size: 14px;
@@ -1288,13 +1348,6 @@ img {
   padding-bottom: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.search-form input:active,
-.feedback input:active,
-.search-form input:focus,
-.feedback input:focus {
-  font-weight: bold;
 }
 
 .feedback {
@@ -1377,6 +1430,7 @@ img {
 
 .feedback .feedback-send {
   display: inline-block;
+  vertical-align: top;
   color: rgba(255, 255, 255, 1);
   border: none;
   font-size: 18px;
@@ -1416,13 +1470,13 @@ img {
       align-self: center;
   width: 224px;
   margin-right: 710px;
-  padding-left: 54px;
+  padding-left: 27px;
   margin-top: 18px;
 }
 
 .schedule-inner {
   margin-left: auto;
-  margin-right: 52px;
+  margin-right: 26px;
   margin-top: -5px;
 }
 
@@ -1438,6 +1492,7 @@ img {
 
 .breadcrumb li {
   display: inline-block;
+  vertical-align: top;
   padding-right: 5px;
 }
 
@@ -1459,7 +1514,7 @@ img {
   margin-top: 5px;
   margin-right: 762px;
   width: 384px;
-  margin-left: 50px;
+  margin-left: 27px;
   margin-bottom: 0px;
 }
 
@@ -1467,7 +1522,7 @@ img {
   width: auto;
   margin-right: 267px;
   margin-top: 23px;
-  margin-left: 50px;
+  margin-left: 26px;
   margin-bottom: 25px;
   width: 933px;
 }
@@ -1495,6 +1550,7 @@ img {
 .sorting-wrap {
   width: 193px;
   display: inline-block;
+  vertical-align: top;
   margin-right: 14px;
   position: relative;
 }
@@ -1502,11 +1558,13 @@ img {
 .range-wrap {
   width: 218px;
   display: inline-block;
+  vertical-align: top;
   margin-right: 16px;
 }
 
 .fat-filter-wrap {
   display: inline-block;
+  vertical-align: top;
 }
 
 .flavors-wrap {
@@ -1526,6 +1584,8 @@ img {
   margin-top: 5px;
   /*Поддерживается не всеми браузерами*/
   -webkit-appearance: listbox;
+   -moz-appearance: listbox;
+        appearance: listbox;
   padding-right: 17px;
   padding-top: 5px;
   padding-left: 15px;
@@ -1556,6 +1616,7 @@ img {
   color: rgba(255, 255, 255, 1);
   font-weight: 500;
   display: inline-block;
+  vertical-align: top;
   margin-left: 17px;
 }
 
@@ -1566,6 +1627,7 @@ img {
   color: rgba(255, 255, 255, 1);
   font-weight: 500;
   display: inline-block;
+  vertical-align: top;
 }
 
 .filter .sorting,
@@ -1577,7 +1639,6 @@ img {
 }
 
 .filter .sorting:hover,
-/*не совсем поняла по стайлгайду черный только для сортировки или для других фильтров тоже?*/
 .filter input[type="range"]:hover,
 .fat-content li:hover,
 .flavors-type li:hover {
@@ -1597,6 +1658,7 @@ img {
       -ms-grid-row-align: center;
       align-self: center;
   display: inline-block;
+  vertical-align: top;
   margin-left: 13px;
   padding-left: 30px;
   padding-right: 28px;
@@ -1751,21 +1813,22 @@ img {
 }
 
 .icecream-catalog {
-  width: auto;
+  width: 1200px;
   margin-bottom: 55px;
 }
 
 .paginator {
   margin-left: auto;
-  margin-right: 42px;
+  margin-right: 19px;
 }
 
 .paginator li {
   list-style-type: none;
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 30px;
   text-align: center;
-  width: 18px;
+  width:18px;
   padding-left: 4px;
   padding-top: 4px;
   padding-right: 4px;
@@ -1776,7 +1839,6 @@ img {
   margin: 0 0;
   padding: 0 0;
   padding-left: 30px;
-  position: relative;
 }
 
 .paginator a {
@@ -1785,21 +1847,24 @@ img {
   font-weight: bold;
   line-height: 18px;
   display: inline-block;
+  vertical-align: top;
 }
 
-.paginator li:hover {
+.paginator li:hover,
+.paginator li:focus {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  height: auto;
 }
 
-.paginator a:active,
-.paginator a:focus {
+.paginator li:active,
+.paginator li:focus {
   background-color: rgba(255, 255, 255, 1);
-  color: rgba(50, 50, 50, 1);
   border-radius: 50%;
-  width: 26px;
-  height: 26px;
+}
+
+
+.paginator a:active {
+  color: rgba(50, 50, 50, 1);
 }
 
 .paginator .current-page-number {
@@ -1808,42 +1873,28 @@ img {
   font-weight: 500;
   border-radius: 100%;
   text-align: center;
-  padding: 5px;
-  height: auto;
   padding-right: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
   padding-top: 4px;
 }
 
-.paginator ul::before {
-  content: "";
-  width: 19px;
-  height: 19px;
+.backward {
+  width: 12px;
+  height: 12px;
   background-image: url("../img/icon-right-small.svg");
   opacity: 0.2;
   background-repeat: no-repeat;
-  position: absolute;
-  left: 0px;
-  top: 3px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.paginator li:last-of-type {
-  position: relative;
-}
-
-.paginator li:last-of-type::after {
-  content: "";
-  width: 19px;
-  height: 19px;
+.next-page {
+  width: 12px;
+  height: 12px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
-  position: absolute;
-  left: 10px;
-  top: 8px;
 }
 
 .order {
@@ -1867,6 +1918,7 @@ img {
 .order a {
   color: inherit;
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 5px;
   padding-bottom: 10px;
 }
@@ -1947,6 +1999,9 @@ img {
   margin-right: 10px;
   margin-left: 340px;
 }
+.cart-wrap:hover .order{
+  display: block;
+}
 
 .blog h3:hover,
 .blog h3:active,
@@ -1957,21 +2012,21 @@ img {
 .feedback-form input:hover,
 .search-form input:hover,
 .sing-in-form input:hover,
-.feedback-form input:focus,
-.search-form input:focus,
-.sing-in-form input:focus {
-  -webkit-box-shadow: 0 0 0px 1px rgb(199, 198, 197);
+.mailing-form input:hover{
+    -webkit-box-shadow: 0 0 0px 1px rgb(199, 198, 197);
           box-shadow: 0 0 0px 1px rgb(199, 198, 197);
 }
 
 .feedback-form input:active,
 .search-form input:active,
 .sing-in-form input:active,
+.mailing-form input:active,
 .feedback-form input:focus,
 .search-form input:focus,
-.sing-in-form input:focus {
-  -webkit-box-shadow: 0 0 0px 1px rgb(143, 189, 236);
-          box-shadow: 0 0 0px 1px rgb(143, 189, 236);
+.sing-in-form input:focus,
+.mailing-form input:focus {
+  -webkit-box-shadow: 0 0 0px 2px rgb(143, 189, 236);
+          box-shadow: 0 0 0px 2px rgb(143, 189, 236);
 }
 
 .sorting:hover {
@@ -1999,7 +2054,6 @@ img {
   display: flex;
   width: 1146px;
   margin: 0 auto;
-  margin-bottom: 30px;
 }
 
 .catalog-footer {
@@ -2008,31 +2062,31 @@ img {
 }
 
 .main-search {
-  padding-right: 35px;
-  position: relative;
   margin-right: 10px;
 }
 
-.main-search a::before {
-  content: "";
+.main-search a{
+  display: inline-block;
+  vertical-align: top;
   width: 35px;
   height: 35px;
-  position: absolute;
   background-image: url("../img/loupe.svg");
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   background-position: center;
-  top: -17px;
 }
 
-.main-search a:hover::before {
+.search-wrap:hover a,
+.search-wrap:focus a,
+.search-wrap:active a   {
   background-image: url("../img/loupe-active.svg");
   background-color: rgba(248, 247, 244, 1);
 }
 
 .log-in a {
   display: inline-block;
+  vertical-align: top;
   padding-left: 42px;
   padding-right: 15px;
   padding-top: 8px;
@@ -2051,7 +2105,9 @@ img {
   top: 6px;
 }
 
-.log-in a:hover::before {
+.log-in-wrap:hover a::before,
+.log-in-wrap:focus a::before,
+.log-in-wrap:active a::before {
   background-image: url("../img/enter-icon-active.svg");
 }
 
@@ -2062,6 +2118,7 @@ img {
   padding-bottom: 8px;
   padding-right: 15px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .empty-cart a::before {
@@ -2101,6 +2158,7 @@ img {
   padding-bottom: 8px;
   padding-right: 20px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .full-cart a::before {
