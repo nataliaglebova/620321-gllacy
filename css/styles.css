@@ -1,6 +1,8 @@
 body {
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: rgba(125, 157, 146, 0.8);
+  /*для эффекта подветки фона*/
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(162,181,170,0.2) 19%,rgba(132,157,143,0.25) 25%,rgba(132,157,143,0.4) 44%);
+  background-color: rgb(132, 157, 143);
 }
 
 a {
@@ -69,6 +71,9 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   left: 15%;
 }
+.sub-menu a::after{
+  display: none;
+}
 
 .site-menu li {
   display: inline-block;
@@ -90,6 +95,10 @@ img {
   color: rgb(50, 50, 50);
   background-color: rgb(247, 246, 243);
   border-radius: 30px;
+}
+.main-menu>a:active{
+  box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+  background-color: rgb(237, 237, 237);
 }
 
 .sub-menu li {
@@ -137,7 +146,9 @@ img {
 .current-menu-item a {
   color: rgb(255, 255, 255);
 }
-
+.current-menu-item:hover a{
+  color: rgb(50, 50, 50);
+}
 .calatog-menu {
   position: relative;
 }
@@ -171,11 +182,14 @@ img {
 
 .current-page>a {
   background-color: rgba(208, 112, 88, 1);
-  padding: 7px 13px 7px 14px;
+  padding: 5px 13px 7px 14px;
   border-radius: 40px;
   margin-right: 5px;
 }
-
+.current-page>a:active{
+  box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+  background-color: rgb(237, 237, 237);
+}
 .current-page a::after {
   display: none;
 }
@@ -183,6 +197,7 @@ img {
 .current-page ul {
   margin-top: 5px;
 }
+
 
 .user-field {
   width: auto;
@@ -350,7 +365,9 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-
+.slider-controls label:hover{
+  background-color: rgba(248, 247, 244, 0.4);
+}
 .slider-controls {
   position: absolute;
   bottom: 63px;
@@ -457,13 +474,14 @@ margin-top: 10px;
   /* Для случая, если не загрузится картинка*/
   background-color: rgba(156, 19, 45, 1);
   background-image: url("../img/promo-raspberry-background.jpg");
-  margin-right: 26px;
+  margin-right: 13px;
 }
 
 .promo-ad .promo-chocolate {
   /* Для случая, если не загрузится картинка*/
   background-color: rgba(63, 38, 26, 1);
   background-image: url("../img/promo-chocolate-background.jpg");
+  margin-left: 13px;
 }
 
 .promo-ad .buttons {
@@ -1603,7 +1621,7 @@ margin-top: 10px;
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   top: 17px;
-  left: 168px;
+  left: 160px;
 }
 
 .sorting-style:hover::after {
@@ -1754,8 +1772,7 @@ margin-top: 10px;
   opacity: 1;
 }
 
-.fat-content label:disabled::before,
-.flavors-type label:disabled::before {
+.visually-hidden[disabled]+label::before {
   opacity: 0.4;
 }
 
@@ -1822,6 +1839,13 @@ margin-top: 10px;
   margin-right: 19px;
 }
 
+
+.paginator ul {
+  margin: 0 0;
+  padding: 0 0;
+  padding-left: 30px;
+}
+
 .paginator li {
   list-style-type: none;
   display: inline-block;
@@ -1835,11 +1859,23 @@ margin-top: 10px;
   padding-bottom: 4px;
 }
 
-.paginator ul {
-  margin: 0 0;
-  padding: 0 0;
-  padding-left: 30px;
+.paginator li:last-child{
+  height: 12px;
+  width: 12px;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
 }
+
+.paginator li:first-child{
+  height: 12px;
+  width: 12px;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  }
 
 .paginator a {
   color: rgba(255, 255, 255, 1);
@@ -1909,6 +1945,7 @@ margin-top: 10px;
   position: absolute;
   top: 60px;
   left: 983px;
+  z-index: 100;
 }
 
 .order td {
