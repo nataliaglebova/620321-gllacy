@@ -1371,7 +1371,7 @@ margin-top: 10px;
 .feedback {
   display: none;
   position: fixed;
-  top: 318px;
+  top: 25%;
   left: 715px;
   z-index: 30;
 }
@@ -2229,7 +2229,47 @@ margin-top: 10px;
   margin-left: 48px;
   margin-bottom: 20px;
 }
+@keyframes enter {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+
+@keyframes check-value {
+ 0%,
+ 100% {
+     transform: scale(1);
+  }
+  50% {
+     transform: scale(0.9);
+  }
+}
+
+
+@keyframes close {
+  from {
+     transform: scale(1);
+     opacity: 1;
+  }
+  to {
+     transform: scale(0);
+     opacity: 0.2;
+  }
+}
 
 .modal-show {
   display: block;
+  animation: enter 1s;
+}
+
+.modal-check {
+    animation: check-value 1s;
+}
+
+.modal-close{
+    animation: close 1.5s;
 }
