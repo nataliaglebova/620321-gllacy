@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Магазин мороженого "Глейси"</title>
 </head>
@@ -40,38 +40,38 @@
           </ul>
           <div class="user-field" aria-label="Блок навигации пользователя">
             <div class="search-wrap">
-              <p class="main-search">
-              <a href="#"><span class="visually-hidden">Поиск</span></a>
-              <div class="search-form">
-                <form action="index.html" method="post">
-                  <input type="search" name="search-text" value="" placeholder="Что ищем?">
-                  <button type="submit" name="start-search" class="visually-hidden">Поиск</button>
-                </form>
+              <div class="main-search">
+                <a href="#"><span class="visually-hidden">Поиск</span></a>
+                <div class="search-form">
+                  <form action="index.html" method="post">
+                    <input type="search" name="search-text" value="" placeholder="Что ищем?">
+                    <button type="submit" name="start-search" class="visually-hidden">Поиск</button>
+                  </form>
+                </div>
               </div>
-            </p>
-          </div>
-          <div class="log-in-wrap">
-            <p class="log-in">
-              <a href="#">Вход</a>
-              <!-- Всплывающее окно входа-->
-              <div class="sing-in-form">
-                <h3 class="visually-hidden">Вход в личный кабинет</h3>
-                <form class="" action="index.html" method="post">
-                  <input type="email" name="login-email" value="" placeholder="Электронная почта">
-                  <input type="password" name="password" value="" placeholder="Пароль">
-                  <button type="submit" name="login-button" class="buttons">Войти</button>
-                  <ul class="login-links">
-                    <li>
-                      <a href="#">Забыли пароль?</a>
-                    </li>
-                    <li>
-                      <a href="#">Новая регистрация</a>
-                    </li>
-                  </ul>
-                </form>
+            </div>
+            <div class="log-in-wrap">
+              <div class="log-in">
+                <a href="#">Вход</a>
+                <!-- Всплывающее окно входа-->
+                <div class="sing-in-form">
+                  <h3 class="visually-hidden">Вход в личный кабинет</h3>
+                  <form class="" action="index.html" method="post">
+                    <input type="email" name="login-email" value="" placeholder="Электронная почта">
+                    <input type="password" name="password" value="" placeholder="Пароль">
+                    <button type="submit" name="login-button" class="buttons">Войти</button>
+                    <ul class="login-links">
+                      <li>
+                        <a href="#">Забыли пароль?</a>
+                      </li>
+                      <li>
+                        <a href="#">Новая регистрация</a>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
               </div>
-            </p>
-          </div>
+            </div>
             <p class="empty-cart" aria-label="Корзина">
               <a href="#">Пусто</a>
             </p>
@@ -225,15 +225,13 @@
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="main-map">
-            <iframe src="https://yandex.ru/map-widget/v1/-/CBRIr0hOOD" width="1200" height="430" frameborder="0" allowfullscreen="true" aria-label="Карта, адрес магазина ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBRIr0hOOD" width="1200" height="430" aria-label="Карта, адрес магазина ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
             <div class="adress-tel-info">
               <p>Адрес главного офиса и офлайн-магазина:</p>
               <b class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-              <p class="call-order">Для заказов по телефону:
-                <div class="call-order">
-                  <b class="tel-number">8 812 450-25-25</b>
-                </div>
-                  (с 10 до 20 ежедневно)</p>
+              <p class="order-info">Для заказов по телефону:
+                <b class="tel-number">8 812 450-25-25</b>
+                (с 10 до 20 ежедневно)</p>
               <a href="#" class="buttons feedback-btn">Форма обратной связи</a>
             </div>
           </div>
@@ -290,7 +288,7 @@
     </div>
     <!-- Форма обратной связи-->
     <div class="feedback">
-      <form class="feedback-form" action="index.html" method="post" class="feedback-form">
+      <form class="feedback-form" action="index.html" method="post">
         <p><b>Мы обязательно вам ответим!</b></p>
         <input type="text" name="custom-name" value="" placeholder="Как вас зовут?" class="custom-name">
         <input type="email" name="custom-email" value="" placeholder="Ваша почта для ответа?" class="custom-email">
@@ -300,7 +298,7 @@
       </form>
     </div>
   </div>
-  <script src="js/script.js">
+  <script src="js/script-min.js">
   </script>
 </body>
 

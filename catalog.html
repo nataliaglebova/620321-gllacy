@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Магазин мороженого "Глейси"</title>
 </head>
@@ -35,68 +35,68 @@
         </ul>
         <div class="user-field" aria-label="Блок пользователя">
           <div class="search-wrap">
-            <p class="main-search">
-            <a href="#"><span class="visually-hidden">Поиск</span></a>
-            <div class="search-form">
-              <form action="index.html" method="post">
-                <input type="search" name="search-text" value="" placeholder="Что ищем?">
-                <button type="submit" name="start-search" class="visually-hidden">Поиск</button>
-              </form>
+            <div class="main-search">
+              <a href="#"><span class="visually-hidden">Поиск</span></a>
+              <div class="search-form">
+                <form action="index.html" method="post">
+                  <input type="search" name="search-text" value="" placeholder="Что ищем?">
+                  <button type="submit" name="start-search" class="visually-hidden">Поиск</button>
+                </form>
+              </div>
             </div>
-          </p>
-        </div>
-        <div class="log-in-wrap">
-          <p class="log-in">
-            <a href="#">Вход</a>
-            <!-- Всплывающее окно входа-->
-            <div class="sing-in-form">
-              <h3 class="visually-hidden">Вход в личный кабинет</h3>
-              <form class="" action="index.html" method="post">
-                <input type="email" name="login-email" value="" placeholder="Электронная почта">
-                <input type="password" name="password" value="" placeholder="Пароль">
-                <button type="submit" name="login-button" class="buttons">Войти</button>
-                <ul class="login-links">
-                  <li>
-                    <a href="#">Забыли пароль?</a>
-                  </li>
-                  <li>
-                    <a href="#">Новая регистрация</a>
-                  </li>
-                </ul>
-              </form>
+          </div>
+          <div class="log-in-wrap">
+            <div class="log-in">
+              <a href="#">Вход</a>
+              <!-- Всплывающее окно входа-->
+              <div class="sing-in-form">
+                <h3 class="visually-hidden">Вход в личный кабинет</h3>
+                <form class="" action="index.html" method="post">
+                  <input type="email" name="login-email" value="" placeholder="Электронная почта">
+                  <input type="password" name="password" value="" placeholder="Пароль">
+                  <button type="submit" name="login-button" class="buttons">Войти</button>
+                  <ul class="login-links">
+                    <li>
+                      <a href="#">Забыли пароль?</a>
+                    </li>
+                    <li>
+                      <a href="#">Новая регистрация</a>
+                    </li>
+                  </ul>
+                </form>
+              </div>
             </div>
-          </p>
+          </div>
+          <div class="cart-wrap">
+            <p class="full-cart" aria-label="Корзина">
+              <a href="#">2 товара</a>
+            </p>
+            <!-- Выпадающее меню корзины-->
+            <section class="order">
+              <h2 class="visually-hidden">Заказ товаров</h2>
+              <table class="shopping-list">
+                <tr>
+                  <td><button type="button" name="del-button" class="del-button"><span class="visually-hidden">Удалить товар</span></button></td>
+                  <td><img src="img/orange-icecream.jpg" width="33" height="33" alt="Мороженое с апельсиновым джемом" class="small-item-img"></td>
+                  <td><a href="#">Пломбир с апельсиновым джемом</a></td>
+                  <td>1,5 кг х <span class="price-per-one">200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><button type="button" name="del-button" class="del-button"> <span class="visually-hidden">Удалить товар</span> </button></td>
+                  <td><img src="img/strawberry-icecream.jpg" width="33" height="33" alt="Клубничный пломбир" class="small-item-img"></td>
+                  <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                  <td>1,5 кг х <span class="price-per-one">300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr class="total">
+                  <td colspan="5"><span class="total-sum">Итого:750 руб.</span></td>
+                </tr>
+              </table>
+              <a href="#" class="buttons">Оформить заказ</a>
+            </section>
+          </div>
         </div>
-        <div class="cart-wrap">
-          <p class="full-cart" aria-label="Корзина">
-            <a href="#">2 товара</a>
-          </p>
-          <!-- Выпадающее меню корзины-->
-          <section class="order">
-            <h2 class="visually-hidden">Заказ товаров</h2>
-            <table class="shopping-list">
-              <tr>
-                <td><button type="button" name="del-button" class="del-button"><span class="visually-hidden">Удалить товар</span></button></td>
-                <td><img src="img/orange-icecream.jpg" width="33" height="33" alt="Мороженое с апельсиновым джемом" class="small-item-img"></td>
-                <td><a href="#">Пломбир с апельсиновым джемом</a></td>
-                <td>1,5 кг х <span class="price-per-one">200 руб.</span></td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><button type="button" name="del-button" class="del-button"> <span class="visually-hidden">Удалить товар</span> </button></td>
-                <td><img src="img/strawberry-icecream.jpg" width="33" height="33" alt="Клубничный пломбир" class="small-item-img"></td>
-                <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-                <td>1,5 кг х <span class="price-per-one">300 руб.</span></td>
-                <td>450 руб.</td>
-              </tr>
-              <tr class="total">
-                <td colspan="5"><span class="total-sum">Итого:750 руб.</span></td>
-              </tr>
-            </table>
-            <a href="#" class="buttons">Оформить заказ</a>
-          </section>
-        </div>
-      </div>
         <div class="breadcrumb" aria-label="Навигация по страницам сайта">
           <ul>
             <li><a href="index.html">Главная</a></li>
@@ -381,11 +381,11 @@
       <div class="paginator" aria-label="Навигация по старницам каталога мороженого">
         <ul>
           <li><a class="backward"><span class="visually-hidden">Назад</span></a></li>
-          <li class="current-page-number">1</li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a> </li>
+          <li class="current-page-number paginator-page">1</li>
+          <li><a href="#" class="paginator-page">2</a></li>
+          <li><a href="#" class="paginator-page">3</a></li>
+          <li><a href="#" class="paginator-page">4</a></li>
+          <li><a href="#" class="paginator-page">5</a> </li>
           <li><a href="#" class="next-page"><span class="visually-hidden">Далее</span></a></li>
         </ul>
       </div>
