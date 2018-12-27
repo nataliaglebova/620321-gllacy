@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", "Arial", sans-serif;
-  /*для эффекта подветки фона*/
+  /*для эффекта подcветки фона*/
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), color-stop(19%, rgba(162, 181, 170, 0.2)), color-stop(25%, rgba(132, 157, 143, 0.25)), color-stop(44%, rgba(132, 157, 143, 0.4)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(162, 181, 170, 0.2) 19%, rgba(132, 157, 143, 0.25) 25%, rgba(132, 157, 143, 0.4) 44%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(162, 181, 170, 0.2) 19%, rgba(132, 157, 143, 0.25) 25%, rgba(132, 157, 143, 0.4) 44%);
@@ -49,6 +49,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  max-width: 730px;
   margin: 0;
   padding: 0;
   margin-top: 25px;
@@ -1011,7 +1014,7 @@ img {
 .buttons:focus,
 .sing-in-form button:focus,
 .order .buttons:focus,
-.ing-in-form button:focus,
+.sing-in-form button:focus,
 .feedback .feedback-send:focus,
 .buttons:focus {
   background-image:
@@ -1231,7 +1234,7 @@ img {
   display: none;
   background-color: rgba(248, 247, 244, 1);
   width: 276px;
-  height: 215px;
+  height: auto;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -1716,7 +1719,11 @@ img {
 .filter .sorting:hover,
 .filter input[type="range"]:hover,
 .fat-content li:hover,
-.flavors-type li:hover {
+.flavors-type li:hover,
+.filter .sorting:focus,
+.filter input[type="range"]:focus,
+.fat-content li:focus,
+.flavors-type li:focus {
   color: rgba(50, 50, 50, 1);
 }
 
@@ -2255,8 +2262,8 @@ img {
   position: absolute;
   width: 294px;
   padding-top: 337px;
-  top: 0px;
-  left: 0px;
+  left: 0;
+  top:0;
   -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgba(248, 247, 244, 0.2);
@@ -2365,4 +2372,9 @@ img {
 
 .main-map iframe {
   border: none;
+}
+
+.radio-btn:focus + label,
+.checkbox:focus + label{
+  color:rgb(50, 50, 50);
 }
